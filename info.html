@@ -5,11 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Info Kegiatan - LDKS FST</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <nav class="navbar">
-    <!-- navbar sama -->
+    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Logo LDKS FST UIN Jakarta"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li class="dropdown">
+        <a href="#">Program <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="syiar.html">Syiar</a></li>
+          <li><a href="keilmuan.html">Keilmuan</a></li>
+          <li><a href="mentoring.html">Mentoring</a></li>
+          <li><a href="dakwah.html">Dakwah Digital</a></li>
+        </ul>
+      </li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="dokumentasi.html">Dokumentasi</a></li>
+      <li><a href="info.html" class="active">Info Kegiatan</a></li>
+      <li><a href="join.html">How to Join Us</a></li>
+      <li><a href="tentang.html">Tentang Kami</a></li>
+    </ul>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
   </nav>
 
   <header class="hero">
@@ -18,19 +36,26 @@
   </header>
 
   <section class="content">
-    <h2>Syahid Fair 2025</h2>
+    <h2><i class="fas fa-star"></i> Syahid Fair 2025</h2>
     <div class="event-card">
-      <img src="assets/syahid-fair.jpg" alt="Syahid Fair">
+      <img src="assets/syahid-fair.jpg" alt="Poster acara Syahid Fair 2025">
       <div class="event-info">
-        <h3>25-28 Agustus 2025</h3>
+        <h3>24 September 2025</h3>
         <div id="countdown"></div>
-        <p>Kegiatan tahunan terbesar FST UIN Jakarta.</p>
+        <p>Syahid Fair adalah kegiatan tahunan terbesar yang diselenggarakan oleh LDK Syahid FST sebagai wadah syiar dan kreativitas mahasiswa FST UIN Syarif Hidayatullah Jakarta.</p>
+        <a href="join.html" class="btn-selengkapnya">Daftar Sekarang</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 LDKS FST UIN Jakarta</p>
+    <div class="social-icons">
+      <a href="mailto:jadibaikfst@gmail.com" title="Email LDKS FST"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank" title="Instagram LDKS FST"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
