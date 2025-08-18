@@ -265,3 +265,24 @@ body.dark{
   --shadow-1: 0 8px 22px rgba(0,0,0,.45);
   --shadow-2: 0 12px 28px rgba(0,0,0,.6);
 }
+
+/* Tambahkan ini di dalam style.css di bagian paling bawah */
+
+/* Aturan untuk layar lebar (desktop) */
+@media (min-width: 781px) {
+  .menu-toggle {
+    display: none; /* Sembunyikan tombol hamburger */
+  }
+}
+
+/* Pastikan di aturan mobile, nav-links tidak terlihat secara default */
+@media (max-width: 780px) {
+   .nav-links {
+     display: none; /* Sembunyikan link di awal */
+     /* ... aturan lainnya ... */
+   }
+   .nav-links.active {
+     display: flex; /* Tampilkan saat hamburger di-klik */
+     /* ... aturan lainnya ... */
+   }
+}
