@@ -13,27 +13,35 @@
     <a href="index.html" class="logo"><img src="assets/logo.png" alt="LDKS FST Logo"></a>
     <ul class="nav-links">
       <li><a href="index.html">Beranda</a></li>
-      <li><a href="syiar.html">Syiar</a></li>
-      <li><a href="keilmuan.html">Keilmuan</a></li>
-      <li><a href="blog/">Blog</a></li>
+      <li class="dropdown">
+        <a href="#">Program <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="syiar.html">Syiar</a></li>
+          <li><a href="keilmuan.html" class="active">Keilmuan</a></li>
+          <li><a href="mentoring.html">Mentoring</a></li>
+          <li><a href="dakwah.html">Dakwah Digital</a></li>
+        </ul>
+      </li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="dokumentasi.html">Dokumentasi</a></li>
+      <li><a href="info.html">Info Kegiatan</a></li>
+      <li><a href="join.html">How to Join Us</a></li>
+      <li><a href="tentang.html">Tentang Kami</a></li>
     </ul>
-    <button id="toggle-theme"><i class="fas fa-moon"></i></button>
-  </nav>
+    </nav>
 
-  <header id="home">
+  <header class="hero">
     <h1>Program Keilmuan & Sains</h1>
-    <p>Mengasah intelektualitas dalam bingkai nilai-nilai Islam.</p>
+    <p class="typing-text">Mengasah intelektualitas dalam bingkai nilai-nilai Islam.</p>
   </header>
 
   <section class="content">
-    <!-- Menu Tab -->
     <div class="tab-menu">
       <button class="tab-btn active" data-tab="workshop">Workshop IT</button>
       <button class="tab-btn" data-tab="science">Science Talk</button>
       <button class="tab-btn" data-tab="agenda">Agenda</button>
     </div>
 
-    <!-- Konten Tab -->
     <div class="tab-content active" id="workshop">
       <h3>Workshop IT</h3>
       <p>Dari Python hingga Machine Learning! 💻 
@@ -62,6 +70,7 @@
     </div>
     <p>© 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
   </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>
