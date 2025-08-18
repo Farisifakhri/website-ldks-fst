@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog LDKS FST</title>
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="LDKS FST Logo"></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Beranda</a></li>
+      <li><a href="../syiar.html">Syiar</a></li>
+      <li><a href="../keilmuan.html">Keilmuan</a></li>
+      <li><a href="index.html" class="active">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="blog-header">
+    <h1>📰 Blog Nashirul ‘Ilm</h1>
+    <p>Menyebarkan dakwah, ilmu, dan inspirasi mahasiswa.</p>
+  </header>
+
+  <!-- Filter Kategori -->
+  <div class="filter-menu">
+    <button class="filter-btn active" data-filter="all">Semua</button>
+    <button class="filter-btn" data-filter="berita">Berita Kegiatan</button>
+    <button class="filter-btn" data-filter="syiar">Syiar</button>
+    <button class="filter-btn" data-filter="keilmuan">Keilmuan</button>
+    <button class="filter-btn" data-filter="opini">Opini Mahasiswa</button>
+  </div>
+
+  <!-- List Artikel -->
+  <main class="blog-list">
+    <!-- Contoh Artikel -->
+    <article class="blog-card syiar">
+      <img src="../assets/hari-4.jpg" alt="Keajaiban Sains dalam Al-Qur’an">
+      <div class="blog-content">
+        <h2><a href="artikel1.html">Keajaiban Sains dalam Al-Qur’an</a></h2>
+        <p class="meta"><i class="fas fa-user"></i> Admin • <i class="fas fa-calendar"></i> 18 Agustus 2025</p>
+        <p class="excerpt">Fakta ilmiah modern tentang embriologi, alam semesta, dan geologi ternyata telah diisyaratkan dalam Al-Qur’an.</p>
+        <a href="artikel1.html" class="btn-read">Baca Selengkapnya</a>
+      </div>
+    </article>
+
+    <article class="blog-card berita">
+      <img src="../assets/workshop-it.jpg" alt="Workshop IT">
+      <div class="blog-content">
+        <h2><a href="artikel2.html">Workshop IT untuk Dakwah Digital</a></h2>
+        <p class="meta"><i class="fas fa-user"></i> Tim IT • <i class="fas fa-calendar"></i> 12 Juli 2025</p>
+        <p class="excerpt">LDKS FST mengadakan pelatihan pemrograman web untuk menunjang dakwah digital yang kreatif.</p>
+        <a href="artikel2.html" class="btn-read">Baca Selengkapnya</a>
+      </div>
+    </article>
+
+    <article class="blog-card opini">
+      <img src="../assets/opini.jpg" alt="Opini Mahasiswa">
+      <div class="blog-content">
+        <h2><a href="artikel3.html">Refleksi Mahasiswa Muslim</a></h2>
+        <p class="meta"><i class="fas fa-user"></i> Penulis Muda • <i class="fas fa-calendar"></i> 5 Juli 2025</p>
+        <p class="excerpt">Mengapa mahasiswa perlu berkontribusi dalam dakwah kampus dan menghadirkan solusi sosial keumatan.</p>
+        <a href="artikel3.html" class="btn-read">Baca Selengkapnya</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="mailto:jadibaikfst@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="blog.js"></script>
+</body>
+</html>

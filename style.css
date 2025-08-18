@@ -1,0 +1,267 @@
+/* ==========================================================
+   STYLE.CSS — LDKS FST UIN Jakarta (Universal)
+   Berlaku untuk: index, program pages, dokumentasi, info,
+   join, tentang, serta blog (list & artikel detail)
+   ========================================================== */
+
+/* ============= THEME VARIABLES ============= */
+:root{
+  --bg-gradient: linear-gradient(135deg, #4A90E2, #F9A825);
+  --bg-surface: #ffffff;
+  --bg-page: #f7f8fb;
+
+  --text-main: #2c2c2c;
+  --text-muted: #6f7781;
+  --text-inverse: #ffffff;
+  --text-accent: #0b79d0;
+
+  --brand: #0288D1;
+  --brand-2: #FFD54F;
+  --brand-2-dark: #E6BE3A;
+
+  --shadow-1: 0 6px 18px rgba(0,0,0,.10);
+  --shadow-2: 0 12px 24px rgba(0,0,0,.18);
+  --radius: 14px;
+}
+
+/* ============= BASE ============= */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text-main);
+  background: var(--bg-page);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img{max-width:100%;display:block}
+a{color:var(--text-accent);text-decoration:none}
+a:hover{opacity:.9}
+
+/* ============= NAVBAR ============= */
+.navbar{
+  position: sticky; top:0; z-index:1000;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:1rem;
+  padding: .9rem 1.5rem;
+  background: var(--brand);
+  box-shadow: var(--shadow-1);
+}
+.logo img{height:40px}
+.nav-links{display:flex; gap:1.25rem; list-style:none; margin:0; padding:0}
+.nav-links > li > a{
+  color: var(--text-inverse);
+  font-weight:600;
+  padding:.4rem .25rem;
+  border-radius:8px;
+}
+.nav-links > li > a.active,
+.nav-links > li > a:hover{color:var(--brand-2)}
+
+.dropdown{position:relative}
+.dropdown > a{display:flex; align-items:center; gap:.4rem; color:#fff}
+.dropdown-menu{
+  position:absolute; inset:auto auto auto 0; top:115%;
+  min-width:220px; background: var(--bg-surface); border-radius:12px;
+  box-shadow: var(--shadow-2); padding:.6rem 0; display:none;
+}
+.dropdown:hover .dropdown-menu{display:block}
+.dropdown-menu li{list-style:none}
+.dropdown-menu a{
+  display:block; padding:.65rem 1rem; color:var(--text-main); font-weight:500;
+}
+.dropdown-menu a:hover{background: #f0f6ff}
+
+/* ============= HERO ============= */
+.hero{
+  background: var(--bg-gradient);
+  color: var(--text-inverse);
+  text-align:center;
+  padding: 6.5rem 1.5rem 5rem;
+}
+.hero h1{font-size: clamp(2rem, 3.5vw, 3rem); margin:.2rem 0 .6rem}
+.typing-text{
+  display:inline-block;
+  border-right:3px solid var(--brand-2);
+  white-space:nowrap; overflow:hidden;
+  animation: typing 4s steps(40,end), blink .75s step-end infinite;
+  font-size:clamp(1rem,1.6vw,1.2rem);
+  margin-bottom:1.2rem;
+}
+@keyframes typing{from{width:0} to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+
+/* Buttons */
+.btn-selengkapnya,.btn-coming-soon{
+  display:inline-block; margin:.4rem; padding:.85rem 1.35rem;
+  border-radius: 999px; font-weight:700; letter-spacing:.2px;
+  transition:transform .18s ease, box-shadow .25s ease, background .2s;
+}
+.btn-selengkapnya{background: var(--brand); color:#fff; box-shadow: var(--shadow-1)}
+.btn-selengkapnya:hover{background: #0b79d0; transform:translateY(-2px); box-shadow: var(--shadow-2)}
+.btn-coming-soon{background: var(--brand-2); color:#333}
+.btn-coming-soon:hover{background: var(--brand-2-dark); transform:translateY(-2px)}
+
+/* ============= GENERIC SECTIONS ============= */
+.content{padding: 3.2rem 1.25rem; text-align:center}
+.content h2{
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  color: var(--brand);
+  margin: 0 0 1.2rem;
+}
+.content h2 i{margin-right:.5rem; color: var(--brand-2)}
+
+/* ============= EVENT CARD (Info Kegiatan) ============= */
+.event-card{
+  max-width: 980px; margin-inline:auto; background: var(--bg-surface);
+  border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow-1);
+  display:grid; grid-template-columns: 1fr; text-align:left;
+}
+.event-card img{width:100%; height:230px; object-fit:cover}
+.event-info{padding:1.3rem 1.3rem 1.6rem}
+.event-info h3{margin:.2rem 0 .2rem; font-size:1.35rem; color:var(--text-main)}
+#countdown{font-weight:800; color:var(--brand); margin:.6rem 0 1rem}
+
+/* ============= PROGRAM CARDS (Syiar/Keilmuan/Mentoring/Digital) ============= */
+.card-grid{
+  display:grid; gap:1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  max-width: 1100px; margin: .5rem auto 0;
+}
+.card{
+  background: var(--bg-surface);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  box-shadow: var(--shadow-1);
+  text-align:left;
+  transition: transform .18s ease, box-shadow .25s ease;
+}
+.card:hover{transform: translateY(-6px); box-shadow: var(--shadow-2)}
+.card h3{margin:.1rem 0 .35rem; color: var(--brand)}
+.card p{margin:0; color: var(--text-muted)}
+
+/* ============= BLOG (List) ============= */
+.blog-header{
+  text-align:center; padding: 4.5rem 1.3rem 2.2rem;
+  background: var(--bg-gradient); color:#fff; box-shadow: var(--shadow-1);
+}
+.blog-header h1{margin:0 0 .4rem}
+.filter-menu{
+  display:flex; justify-content:center; gap:.6rem; flex-wrap:wrap; margin:1.2rem 0 0;
+}
+.filter-btn{
+  padding:.55rem 1.1rem; border:none; border-radius:999px; cursor:pointer;
+  background: var(--brand-2); color:#333; font-weight:700; transition: transform .15s, box-shadow .25s;
+}
+.filter-btn:hover{transform:translateY(-2px); box-shadow: var(--shadow-1)}
+.filter-btn.active{background: var(--brand); color:#fff}
+
+.blog-list{
+  max-width: 1200px; margin: 2rem auto 3rem; padding: 0 1rem;
+  display:grid; gap:1.5rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.blog-card{
+  background:#fff; border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow-1);
+  display:flex; flex-direction:column; transition: transform .18s, box-shadow .25s;
+}
+.blog-card:hover{transform: translateY(-6px); box-shadow: var(--shadow-2)}
+.blog-card img{height:190px; object-fit:cover}
+.blog-content{padding:1.1rem 1.1rem 1.25rem; display:flex; flex-direction:column; gap:.55rem; flex:1}
+.blog-content h2{margin:0; font-size:1.15rem; color:var(--text-main)}
+.blog-content h2 a{color: var(--brand)}
+.meta{font-size:.9rem; color: var(--text-muted)}
+.excerpt{color:#47505a}
+.btn-read{
+  align-self:flex-start; margin-top:auto;
+  padding:.55rem 1rem; border-radius:999px; background: var(--brand); color:#fff; font-weight:700;
+}
+.btn-read:hover{background:#0b79d0}
+
+/* ============= BLOG (Artikel Detail) ============= */
+.blog-article{
+  max-width: 860px; margin: 4.5rem auto; padding: 0 1rem;
+  background:#fff; border-radius: var(--radius); box-shadow: var(--shadow-1);
+}
+.blog-article article{padding: 1.6rem 1.6rem 2rem}
+.blog-article h1{margin:.2rem 0 .2rem; color: var(--brand)}
+.blog-article .meta{margin:.2rem 0 1.1rem}
+.featured-img{width:100%; height:auto; border-radius:10px; margin:.6rem 0 1.2rem}
+.blog-article p{margin:.75rem 0}
+.blog-article h2, .blog-article h3{color:#0b79d0}
+
+/* ============= GALLERY (Dokumentasi) ============= */
+.gallery{
+  max-width: 1100px; margin: 0 auto; padding: 0 1rem;
+  display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.gallery img{
+  width:100%; border-radius:12px; box-shadow: var(--shadow-1);
+  transition: transform .18s ease, box-shadow .25s ease;
+}
+.gallery img:hover{transform: scale(1.03); box-shadow: var(--shadow-2)}
+
+/* ============= JOIN FORM ============= */
+.join-form{
+  max-width:640px; margin: 0 auto; text-align:left;
+  background:#fff; padding: 1.25rem; border-radius: var(--radius); box-shadow: var(--shadow-1);
+  display:grid; gap:.8rem;
+}
+.join-form input, .join-form select, .join-form textarea{
+  width:100%; padding:.9rem 1rem; border-radius:12px; border:1px solid #e6ebf2; outline:none;
+  font: inherit; color: var(--text-main); background:#fff;
+}
+.join-form textarea{min-height:120px; resize:vertical}
+.join-form input:focus, .join-form select:focus, .join-form textarea:focus{
+  border-color:#b5d9ff; box-shadow:0 0 0 4px rgba(2,136,209,.12)
+}
+
+/* ============= FOOTER ============= */
+footer{
+  margin-top: 2.5rem;
+  background: var(--brand);
+  color: var(--text-inverse);
+  text-align:center; padding: 2rem 1rem;
+}
+.social-icons{margin-bottom: .6rem}
+.social-icons a{
+  color:#fff; font-size:1.4rem; margin: 0 .6rem; display:inline-flex;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.social-icons a:hover{transform: translateY(-2px); opacity:.9}
+
+/* ============= UTILITIES ============= */
+.reveal-on-scroll{opacity:0; transform: translateY(14px); transition: .6s ease}
+.reveal-on-scroll.visible{opacity:1; transform:none}
+
+/* ============= RESPONSIVE ============= */
+@media (max-width: 980px){
+  .navbar{padding:.9rem 1rem}
+}
+@media (max-width: 780px){
+  .nav-links{gap:.9rem; flex-wrap:wrap}
+  .dropdown:hover .dropdown-menu{display:none} /* matikan hover di mobile */
+  .dropdown .dropdown-menu{position:static; box-shadow:none; padding:.4rem 0; display:block}
+  .event-card{grid-template-columns: 1fr}
+  .event-card img{height:200px}
+}
+@media (max-width: 520px){
+  .hero{padding: 5.5rem 1rem 4rem}
+  .blog-article{margin: 3.6rem auto}
+}
+
+/* ============= OPTIONAL: LIGHT/DARK TOGGLE READY ============= */
+/* kalau nanti mau tambah tombol toggle, cukup tambah class .dark pada <body> */
+body.dark{
+  --bg-page: #0f1520;
+  --bg-surface: #111a27;
+  --text-main: #e8eef5;
+  --text-muted: #a9b2bf;
+  --text-inverse: #e8eef5;
+  --brand: #4aa3ff;
+  --brand-2: #ffd666;
+  --brand-2-dark: #f5c84a;
+  --text-accent: #9bd0ff;
+  --shadow-1: 0 8px 22px rgba(0,0,0,.45);
+  --shadow-2: 0 12px 28px rgba(0,0,0,.6);
+}
