@@ -407,33 +407,53 @@ footer{
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    z-index: 1001; /* Pastikan di atas nav-links */
   }
   .nav-links {
     display: none; /* Sembunyikan menu utama */
     position: absolute;
-    top: 100%;
+    top: 0; /* Ubah dari 100% ke 0 */
     left: 0;
     width: 100%;
-    background: var(--brand);
+    
+    /* [PERBAIKAN] Tambahkan tinggi, background solid, dan padding atas */
+    min-height: 100vh; /* Penuhi layar agar bisa di-scroll jika perlu */
+    padding-top: 80px; /* Beri ruang untuk navbar di atas */
+    background: var(--brand); /* Pastikan background solid */
+
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
+    align-items: center; /* Pusatkan item menu */
   }
   .nav-links.active {
     display: flex; /* Tampilkan saat di-klik */
   }
-  .dropdown:hover .dropdown-menu { display:none; }
-  .dropdown .dropdown-menu { position:static; box-shadow:none; padding:.4rem 0; background: transparent; }
-  .dropdown-menu a { color: var(--text-inverse); }
+
+  /* [PERBAIKAN] CSS untuk dropdown di mobile */
+  .dropdown .dropdown-menu { 
+    position: static; /* Hapus posisi absolut */
+    box-shadow: none; 
+    padding: .5rem 0; 
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    
+    /* Sembunyikan secara default */
+    display: none;
+  }
+  /* Tampilkan saat .open ditambahkan oleh JS */
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu a { 
+    color: var(--brand-2); /* Buat warna link dropdown beda & lebih menonjol */
+    font-weight: bold;
+  }
+
   .event-card {grid-template-columns: 1fr}
   .event-card img{height:200px}
 }
-
-@media (max-width: 520px){
-  .hero{padding: 5.5rem 1rem 4rem}
-  .blog-article{margin: 3.6rem auto}
-}
-
 /* ============= OPTIONAL: LIGHT/DARK TOGGLE READY ============= */
 body.dark{
   --bg-page: #0f1520;
@@ -526,4 +546,33 @@ body.dark{
   .event-container {
     grid-template-columns: 1fr; /* Tumpuk posternya di atas */
   }
+}
+
+/* ============= STYLE UNTUK TAB KEILMUAN ============= */
+.tab-content .event-highlight {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f0f6ff; /* Warna biru muda yang lembut */
+  border-left: 5px solid var(--brand-2); /* Garis aksen kuning di kiri */
+  border-radius: 8px;
+  text-align: left;
+}
+
+.tab-content .event-highlight h4 {
+  margin-top: 0;
+  color: var(--brand); /* Warna biru tua untuk judul */
+}
+
+.event-highlight p {
+    margin-bottom: 1rem;
+}
+
+.event-highlight i {
+    margin-right: 0.5rem;
+    color: var(--brand);
+}
+
+/* Penyesuaian agar tombol terlihat pas di dalam kotak */
+.event-highlight .btn-read {
+    margin: 1rem 0 0 0; /* Memberi jarak dari teks di atasnya */
 }

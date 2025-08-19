@@ -129,3 +129,18 @@ if (tabBtns.length > 0) {
       });
     });
 }
+
+// =================================================================== //
+// 💧 [PERBAIKAN] DROPDOWN MENU DI MOBILE                               //
+// =================================================================== //
+document.querySelectorAll('.dropdown > a').forEach(dropdownToggle => {
+  dropdownToggle.addEventListener('click', (e) => {
+    // Cek apakah kita berada di tampilan mobile (hamburger menu terlihat)
+    const menuToggle = document.querySelector(".menu-toggle");
+    if (window.getComputedStyle(menuToggle).display !== 'none') {
+      e.preventDefault(); // Mencegah link pindah halaman
+      const dropdown = dropdownToggle.parentElement;
+      dropdown.classList.toggle('open');
+    }
+  });
+});
