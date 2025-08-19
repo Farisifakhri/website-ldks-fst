@@ -141,43 +141,114 @@ a:hover{opacity:.9}
 .menu-toggle { display: none; }
 
 /* ============= HERO ============= */
-.hero{
+/* ============= HERO ============= */
+ .hero{
   background: var(--bg-gradient);
   color: var(--text-inverse);
-  text-align:center;
-  padding: 6.5rem 1.5rem 5rem;
-}
-.hero h1{font-size: clamp(2rem, 3.5vw, 3rem); margin:.2rem 0 .6rem}
-.typing-text{
-  display:inline-block;
-  border-right:3px solid var(--brand-2);
-  white-space:nowrap; overflow:hidden;
-  animation: typing 4s steps(40,end), blink .75s step-end infinite;
-  font-size:clamp(1rem,1.6vw,1.2rem);
-  margin-bottom:1.2rem;
-}
-@keyframes typing{from{width:0} to{width:100%}}
-@keyframes blink{50%{border-color:transparent}}
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+ }
 
-/* Buttons */
-.btn-selengkapnya, .btn-coming-soon, .btn-read {
-  display:inline-block; margin:.4rem; padding:.85rem 1.5rem; /* Padding horizontal sedikit ditambah */
-  border-radius: 999px; font-weight:700;
+ .hero-content {
+  display: flex; /* Menggunakan Flexbox untuk tata letak */
+  flex-direction: column; /* Elemen disusun vertikal secara default */
+  align-items: center; /* Pusatkan elemen secara horizontal */
+ }
+
+ .hero-title {
+  display: flex; /* Agar logo dan teks sejajar */
+  align-items: center; /* Vertikal tengahkan logo dan teks */
+  margin-bottom: 1rem; /* Beri jarak dengan sub-judul */
+ }
+
+ .hero-title img { /* Style untuk logo LDK */
+  height: 40px; /* Sesuaikan ukuran logo */
+  margin-right: 10px; /* Beri jarak antara logo dan teks */
+ }
+
+ .hero-title h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+ }
+
+ .hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+ }
+
+ .hero-buttons {
+  display: flex;
+  gap: 0.75rem; /* Jarak antar tombol */
+ }
+
+ .btn-selengkapnya,
+ .btn-coming-soon,
+ .btn-read {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
   text-decoration: none;
-  transition:transform .18s ease, box-shadow .25s ease, background .2s;
-  background: var(--brand-2); /* Warna dasar untuk tombol */
+  transition: transform 0.18s ease, box-shadow 0.25s ease, background 0.2s;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+ }
+
+ .btn-selengkapnya {
+  background-color: var(--brand);
   color: var(--text-inverse);
+  box-shadow: var(--shadow-1);
+ }
 
-/* --- PENINGKATAN TOMBOL --- */
-  letter-spacing: 0.5px; /* Jarak antar huruf */
-  text-transform: uppercase; /* Membuatnya jadi huruf kapital */
-  font-size: 0.85rem; /* Sedikit mengatur ulang ukuran font */
-}
+ .btn-selengkapnya:hover {
+  background-color: #0276c4;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+ }
 
-.btn-selengkapnya, .btn-read {background: var(--brand); color:#fff; box-shadow: var(--shadow-1)}
-.btn-selengkapnya:hover, .btn-read:hover {background: #0b79d0; transform:translateY(-2px); box-shadow: var(--shadow-2)}
-.btn-coming-soon{background: var(--brand-2); color:#333}
-.btn-coming-soon:hover{background: var(--brand-2-dark); transform:translateY(-2px)}
+ .btn-coming-soon {
+  background-color: var(--brand-2);
+  color: var(--text-main);
+  box-shadow: var(--shadow-1);
+ }
+
+ .btn-coming-soon:hover {
+  background-color: var(--brand-2-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+ }
+
+ @media (max-width: 520px) {
+  .hero {
+   padding: 4.5rem 1rem 3.5rem;
+  }
+  .hero-title h1 {
+   font-size: 1.8rem;
+  }
+  .hero-subtitle {
+   font-size: 0.9rem;
+  }
+  .hero-buttons {
+   flex-direction: column; /* Tombol disusun vertikal di mobile */
+   width: 100%;
+  }
+  .btn-selengkapnya,
+  .btn-coming-soon,
+  .btn-read {
+   width: 100%;
+   padding: 0.75rem 1.2rem;
+   font-size: 0.8rem;
+  }
+  .content {
+   padding: 3rem 1rem;
+  }
+  .blog-article {
+   margin: 2.5rem auto;
+  }
+ }
 
 /* ============= GENERIC SECTIONS ============= */
 .content{padding: 4.5rem 1.5rem; text-align:center} /* Padding atas-bawah diperbesar */
@@ -376,4 +447,83 @@ body.dark{
   --text-accent: #9bd0ff;
   --shadow-1: 0 8px 22px rgba(0,0,0,.45);
   --shadow-2: 0 12px 28px rgba(0,0,0,.6);
+}
+
+/* ============= INFO KEGIATAN PAGE ============= */
+.event-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* 2 kolom: 1 untuk poster, 1.5 untuk detail */
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  text-align: left;
+  background: var(--bg-surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+.event-poster img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--shadow-2);
+}
+
+.event-details h3 {
+  font-size: 1.8rem;
+  color: var(--brand);
+  margin-top: 0;
+}
+
+.event-details .theme {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.event-details h4 {
+  font-size: 1.2rem;
+  color: var(--text-main);
+  border-bottom: 2px solid var(--brand-2);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-details ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.event-details ul li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.event-details ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: var(--brand);
+}
+
+.event-timeline p, .event-contact p {
+  margin: 0.5rem 0;
+}
+
+.event-contact i {
+  margin-right: 0.5rem;
+  color: var(--brand);
+}
+
+.event-details .btn-selengkapnya {
+  margin-top: 2rem;
+}
+
+/* --- Buat jadi 1 kolom di mobile --- */
+@media (max-width: 900px) {
+  .event-container {
+    grid-template-columns: 1fr; /* Tumpuk posternya di atas */
+  }
 }
