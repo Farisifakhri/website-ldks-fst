@@ -576,3 +576,96 @@ body.dark{
 .event-highlight .btn-read {
     margin: 1rem 0 0 0; /* Memberi jarak dari teks di atasnya */
 }
+
+/* ============= STYLE UNTUK ARTIKEL BLOG ============= */
+.blog-article .quote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid var(--brand);
+  background-color: #f8f9fa;
+  font-style: italic;
+}
+
+.blog-article .quote footer {
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--text-muted);
+}
+
+/* ============= STYLE UNTUK HALAMAN TENTANG KAMI ============= */
+.about-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    text-align: left;
+}
+
+.about-logo img {
+    max-width: 250px;
+    margin: auto;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr; /* Tumpuk di mobile */
+        text-align: center;
+    }
+    .about-text {
+        order: 2; /* Teks di bawah logo */
+    }
+    .about-logo {
+        order: 1; /* Logo di atas teks */
+    }
+}
+
+/* ============= STYLE UNTUK STRUKTUR ORGANISASI ============= */
+.struktur-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.divisi-card {
+  background: var(--bg-surface);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  border-top: 5px solid var(--brand);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.divisi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-2);
+}
+
+.divisi-card h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--brand);
+  font-size: 1.25rem;
+}
+
+.divisi-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.divisi-card ul li {
+  margin-bottom: 0.6rem;
+  color: #555;
+}
+
+.divisi-card ul li strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
