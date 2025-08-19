@@ -1,0 +1,9 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="islamicPattern" patternUnits="userSpaceOnUse" width="100" height="100">
+      <path d="M50 0 L100 50 L50 100 L0 50 Z M25 25 L75 25 L75 75 L25 75 Z" 
+            fill="none" stroke="#e9eef5" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#islamicPattern)"/>
+</svg>

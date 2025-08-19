@@ -24,20 +24,56 @@
   --radius: 14px;
 }
 
+/* ==========================================================
+   STYLE.CSS — LDKS FST UIN Jakarta (Universal)
+   Berlaku untuk: index, program pages, dokumentasi, info,
+   join, tentang, serta blog (list & artikel detail)
+   ========================================================== */
+
+/* ============= THEME VARIABLES ============= */
+:root{
+  --bg-gradient: linear-gradient(135deg, #4A90E2, #F9A825);
+  --bg-surface: #ffffff;
+  --bg-page: #f7f8fb; /* Warna dasar tetap ada sebagai fallback */
+
+  --text-main: #2c2c2c;
+  --text-muted: #6f7781;
+  --text-inverse: #ffffff;
+  --text-accent: #0b79d0;
+
+  --brand: #0288D1;
+  --brand-2: #FFD54F;
+  --brand-2-dark: #E6BE3A;
+
+  --shadow-1: 0 6px 18px rgba(0,0,0,.10);
+  --shadow-2: 0 12px 24px rgba(0,0,0,.18);
+  --radius: 14px;
+}
+
 /* ============= BASE ============= */
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
   font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text-main);
-  background: var(--bg-page);
+  
+  /* --- PENINGKATAN BACKGROUND --- */
+  background-color: var(--bg-page); /* Warna fallback jika gambar tak muncul */
+  background-image: url('assets/images/islamic-pattern.svg'); /* Path ke pola SVG kita */
+  background-repeat: repeat; /* Mengulang pola */
+  background-size: 300px; /* Ukuran pola, bisa diubah sesuai selera */
+  /* --- AKHIR PENINGKATAN --- */
+
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 img{max-width:100%;display:block}
-a{color:var(--text-accent);text-decoration:none}
+a{color:var(--brand); text-decoration:none; transition: color .2s ease;} /* Warna link disamakan dgn brand & diberi transisi */
 a:hover{opacity:.9}
+
+/* ============= NAVBAR ============= */
+/* ... sisa kode CSS lainnya tetap sama ... */
 
 /* ============= NAVBAR ============= */
 .navbar{
@@ -51,10 +87,28 @@ a:hover{opacity:.9}
 .logo img{height:40px}
 .nav-links{display:flex; gap:1.25rem; list-style:none; margin:0; padding:0}
 .nav-links > li > a{
+  position: relative; /* Diperlukan untuk garis bawah */
   color: var(--text-inverse);
   font-weight:600;
   padding:.4rem .25rem;
   border-radius:8px;
+  transition: color .2s ease;
+}
+.nav-links > li > a::after { /* Garis bawah animasi */
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--brand-2);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-links > li > a:hover::after { /* Tampilkan garis saat hover */
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .nav-links > li > a.active,
 .nav-links > li > a:hover{color:var(--brand-2)}
@@ -64,9 +118,19 @@ a:hover{opacity:.9}
 .dropdown-menu{
   position:absolute; inset:auto auto auto 0; top:115%;
   min-width:220px; background: var(--bg-surface); border-radius:12px;
-  box-shadow: var(--shadow-2); padding:.6rem 0; display:none;
+  box-shadow: var(--shadow-2); padding:.6rem 0;
+  
+  /* --- PENINGKATAN ANIMASI --- */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s;
 }
-.dropdown:hover .dropdown-menu{display:block}
+.dropdown:hover .dropdown-menu{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 .dropdown-menu li{list-style:none}
 .dropdown-menu a{
   display:block; padding:.65rem 1rem; color:var(--text-main); font-weight:500;
@@ -97,18 +161,26 @@ a:hover{opacity:.9}
 
 /* Buttons */
 .btn-selengkapnya, .btn-coming-soon, .btn-read {
-  display:inline-block; margin:.4rem; padding:.85rem 1.35rem;
-  border-radius: 999px; font-weight:700; letter-spacing:.2px;
+  display:inline-block; margin:.4rem; padding:.85rem 1.5rem; /* Padding horizontal sedikit ditambah */
+  border-radius: 999px; font-weight:700;
   text-decoration: none;
   transition:transform .18s ease, box-shadow .25s ease, background .2s;
+  background: var(--brand-2); /* Warna dasar untuk tombol */
+  color: var(--text-inverse);
+
+/* --- PENINGKATAN TOMBOL --- */
+  letter-spacing: 0.5px; /* Jarak antar huruf */
+  text-transform: uppercase; /* Membuatnya jadi huruf kapital */
+  font-size: 0.85rem; /* Sedikit mengatur ulang ukuran font */
 }
+
 .btn-selengkapnya, .btn-read {background: var(--brand); color:#fff; box-shadow: var(--shadow-1)}
 .btn-selengkapnya:hover, .btn-read:hover {background: #0b79d0; transform:translateY(-2px); box-shadow: var(--shadow-2)}
 .btn-coming-soon{background: var(--brand-2); color:#333}
 .btn-coming-soon:hover{background: var(--brand-2-dark); transform:translateY(-2px)}
 
 /* ============= GENERIC SECTIONS ============= */
-.content{padding: 3.2rem 1.25rem; text-align:center}
+.content{padding: 4.5rem 1.5rem; text-align:center} /* Padding atas-bawah diperbesar */
 .content h2{
   font-size: clamp(1.4rem, 2.6vw, 2rem);
   color: var(--brand);
@@ -144,9 +216,13 @@ a:hover{opacity:.9}
   flex-direction:column;
 }
 .card { padding: 1.25rem 1.2rem; }
-.card:hover, .blog-card:hover {transform: translateY(-6px); box-shadow: var(--shadow-2)}
+.card:hover, .blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-2);
+  border-bottom: 3px solid var(--brand-2); /* Tambahkan garis aksen ini */
+}
 .card h3{margin:.1rem 0 .35rem; color: var(--brand)}
-.card p{margin:0; color: var(--text-muted)}
+.card p{margin:0; color: #555;} /* Kontras ditingkatkan dari var(--text-muted) */
 
 /* ============= BLOG (List & Detail) ============= */
 .blog-header{
@@ -184,7 +260,7 @@ a:hover{opacity:.9}
 .blog-article h1{margin:.2rem 0 .2rem; color: var(--brand)}
 .blog-article .meta{margin:.2rem 0 1.1rem}
 .featured-img{width:100%; height:auto; border-radius:10px; margin:.6rem 0 1.2rem}
-.blog-article p{margin:.75rem 0}
+.blog-article p{margin:.75rem 0; line-height: 1.8;} /* Jarak antar baris dibuat lebih lega */
 .blog-article h2, .blog-article h3{color:#0b79d0}
 
 /* ============= GALLERY (Dokumentasi) ============= */
@@ -232,10 +308,26 @@ footer{
 .reveal-on-scroll.visible{opacity:1; transform:none}
 
 /* ============= RESPONSIVE ============= */
-@media (max-width: 980px){
-  .navbar{padding:.9rem 1rem}
+@media (max-width: 520px){
+  /* --- PENINGKATAN MOBILE --- */
+  .hero {
+    padding: 4.5rem 1rem 3.5rem; /* Padding hero disesuaikan */
+  }
+  .hero h1 {
+    font-size: 1.8rem; /* Ukuran judul utama dikecilkan */
+  }
+  .content {
+    padding: 3rem 1rem; /* Padding antar section disesuaikan */
+  }
+  .blog-article {
+    margin: 2.5rem auto; /* Margin artikel disesuaikan */
+  }
+  .btn-selengkapnya, .btn-coming-soon, .btn-read {
+    padding: .75rem 1.2rem; /* Ukuran tombol sedikit disesuaikan */
+    font-size: 0.8rem;
+  }
+  /* --- AKHIR PENINGKATAN --- */
 }
-
 @media (max-width: 780px){
   .menu-toggle {
     display: block; /* Tampilkan hamburger di mobile */
