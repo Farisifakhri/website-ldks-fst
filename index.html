@@ -5,21 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LDKS FST UIN Jakarta - Beranda</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="intro.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body id="page-beranda">
+  <!-- Enhanced Intro Screen -->
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-content">
+      <div class="intro-logo">
+        <img src="assets/logo.png" alt="Logo LDKS FST" class="logo-animate">
+      </div>
+      <h1 class="intro-text">LDKS FST</h1>
+      <p class="intro-subtitle">Syiar • Keilmuan • Dakwah Digital</p>
+      <div class="intro-icons">
+        <i class="fas fa-mosque"></i>
+        <i class="fas fa-flask"></i>
+        <i class="fas fa-laptop-code"></i>
+      </div>
+    </div>
+    <div class="intro-cloud one"></div>
+    <div class="intro-cloud two"></div>
+    <div class="intro-cloud three"></div>
+  </div>
+
+  <!-- Enhanced Navigation -->
   <nav class="navbar">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Logo LDKS FST UIN Jakarta"></a>
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Logo LDKS FST UIN Jakarta">
+      <span class="logo-text">LDKS FST</span>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Beranda</a></li>
       <li class="dropdown">
         <a href="#">Program <i class="fas fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="syiar.html">Syiar</a></li>
-          <li><a href="keilmuan.html">Keilmuan</a></li>
-          <li><a href="mentoring.html">Mentoring</a></li>
-          <li><a href="dakwah.html">Dakwah Digital</a></li>
+          <li><a href="syiar.html"><i class="fas fa-bullhorn"></i> Syiar</a></li>
+          <li><a href="keilmuan.html"><i class="fas fa-flask"></i> Keilmuan</a></li>
+          <li><a href="mentoring.html"><i class="fas fa-users"></i> Mentoring</a></li>
+          <li><a href="dakwah.html"><i class="fas fa-laptop-code"></i> Dakwah Digital</a></li>
         </ul>
       </li>
       <li><a href="blog/index.html">Blog</a></li>
@@ -28,81 +52,302 @@
       <li><a href="join.html">How to Join Us</a></li>
       <li><a href="tentang.html">Tentang Kami</a></li>
     </ul>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
   </nav>
 
-  <<header class="hero">
-  <div class="hero-content">
-    <div class="hero-title">
-      <img src="assets/logo.png" alt="Logo LDK"> <h1>LDKS FST UIN Jakarta</h1>
+  <!-- Enhanced Hero Section -->
+  <header class="hero">
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+      <div class="floating-elements">
+        <div class="float-item float-1"><i class="fas fa-mosque"></i></div>
+        <div class="float-item float-2"><i class="fas fa-book-quran"></i></div>
+        <div class="float-item float-3"><i class="fas fa-atom"></i></div>
+        <div class="float-item float-4"><i class="fas fa-graduation-cap"></i></div>
+      </div>
     </div>
-    <p class="hero-subtitle">Syiar • Keilmuan • Dakwah Digital • Mentoring</p>
-    <div class="hero-buttons">
-      <a href="join.html" class="btn-selengkapnya">Gabung Bersama Kami</a>
-      <a href="info.html" class="btn-coming-soon">Info Kegiatan Terdekat</a>
+    <div class="hero-content">
+      <div class="hero-title">
+        <img src="assets/logo.png" alt="Logo LDK" class="hero-logo">
+        <h1 class="gradient-text">LDKS FST UIN Jakarta</h1>
+      </div>
+      <p class="hero-subtitle typing-text">Syiar • Keilmuan • Dakwah Digital • Mentoring</p>
+      <div class="hero-buttons">
+        <a href="join.html" class="btn-primary">
+          <i class="fas fa-rocket"></i>
+          Gabung Bersama Kami
+        </a>
+        <a href="info.html" class="btn-secondary">
+          <i class="fas fa-calendar-alt"></i>
+          Info Kegiatan Terdekat
+        </a>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <section class="content reveal-on-scroll">
-    <h2><i class="fas fa-calendar-alt"></i> Info Kegiatan Terdekat</h2>
-    <div class="event-card">
-      <img src="assets/syahid-fair-lomba.png" alt="Poster acara Syahid Fair 2025">
-      <div class="event-info">
-        <h3>Syahid Innovation Challenge 2025</h3>
-        <p>Tanggal: 18 Agustus - 9 September 2025</p>
-        <div id="countdown"></div>
-        <a href="info.html" class="btn-selengkapnya">Selengkapnya</a>
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-number" data-target="150">0</div>
+        <div class="stat-label">Anggota Aktif</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="4">0</div>
+        <div class="stat-label">Program Utama</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="25">0</div>
+        <div class="stat-label">Kegiatan per Semester</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="8">0</div>
+        <div class="stat-label">Tahun Berkiprah</div>
       </div>
     </div>
   </section>
 
+  <!-- Enhanced Event Section -->
   <section class="content reveal-on-scroll">
-    <h2><i class="fas fa-bullhorn"></i> Program Kami</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Syiar</h3><p>Kajian, dakwah kreatif, publikasi islami.</p></div>
-      <div class="card"><h3>Keilmuan</h3><p>Kajian ilmiah, riset, literasi keislaman.</p></div>
-      <div class="card"><h3>Mentoring</h3><p>Pembinaan iman dan keislaman mahasiswa.</p></div>
-      <div class="card"><h3>Dakwah Digital</h3><p>Konten kreatif dan syiar online.</p></div>
+    <h2><i class="fas fa-calendar-alt"></i> Info Kegiatan Terdekat</h2>
+    <div class="event-card modern">
+      <div class="event-badge">
+        <span class="badge-text">Kompetisi</span>
+      </div>
+      <img src="assets/syahid-fair-lomba.png" alt="Poster acara Syahid Fair 2025">
+      <div class="event-overlay">
+        <div class="event-info">
+          <h3>Syahid Innovation Challenge 2025</h3>
+          <p class="event-date">
+            <i class="fas fa-calendar"></i>
+            18 Agustus - 9 September 2025
+          </p>
+          <div class="countdown-container">
+            <div id="countdown" class="countdown-modern"></div>
+          </div>
+          <a href="info.html" class="btn-event">
+            <i class="fas fa-info-circle"></i>
+            Selengkapnya
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="blog-preview">
-  <div class="blog-card">
-    <img src="assets/blog1.jpg" alt="Ilustrasi Al-Quran dan alam semesta">
-    <h3><a href="blog/artikel1.html">Saat Sains dan Iman Bertemu di Al-Qur'an</a></h3>
-    <p>18 Agu 2025 • Oleh Divisi Syiar & Keilmuan</p>
-  </div>
-  <div class="blog-card">
-    <img src="assets/blog2.jpg" alt="Mahasiswa di lingkungan kampus">
-    <h3><a href="blog/artikel2.html">Dakwah Kampus: Cahaya yang Tak Boleh Padam</a></h3>
-    <p>19 Agu 2025 • Oleh Divisi Syiar & Keilmuan</p>
-  </div>
-  <div class="blog-card">
-    <img src="assets/blog3.jpg" alt="Ilustrasi islami">
-    <h3><a href="blog/artikel3.html">Kisah Ajaib di Balik Istighfar Penjual Roti</a></h3>
-    <p>19 Agu 2025 • Oleh Divisi Syiar & Keilmuan</p>
-  </div>
-</div>
-    <a href="blog/index.html" class="btn-selengkapnya">Lihat Semua Artikel</a>
+  <!-- Enhanced Programs Section -->
+  <section class="content reveal-on-scroll">
+    <h2><i class="fas fa-star"></i> Program Kami</h2>
+    <div class="programs-grid">
+      <div class="program-card" data-program="syiar">
+        <div class="program-icon">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <h3>Syiar</h3>
+        <p>Kajian, dakwah kreatif, publikasi islami untuk menyebarkan nilai-nilai keislaman.</p>
+        <div class="program-features">
+          <span class="feature-tag">Kajian Rutin</span>
+          <span class="feature-tag">Media Kreatif</span>
+          <span class="feature-tag">Open Donasi</span>
+        </div>
+        <a href="syiar.html" class="program-link">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      
+      <div class="program-card" data-program="keilmuan">
+        <div class="program-icon">
+          <i class="fas fa-flask"></i>
+        </div>
+        <h3>Keilmuan</h3>
+        <p>Kajian ilmiah, riset, literasi keislaman untuk mengintegrasikan sains dan Islam.</p>
+        <div class="program-features">
+          <span class="feature-tag">Workshop IT</span>
+          <span class="feature-tag">Science Talk</span>
+          <span class="feature-tag">Mind & Ink</span>
+        </div>
+        <a href="keilmuan.html" class="program-link">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      
+      <div class="program-card" data-program="mentoring">
+        <div class="program-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Mentoring</h3>
+        <p>Pembinaan iman dan keislaman mahasiswa melalui pendampingan intensif.</p>
+        <div class="program-features">
+          <span class="feature-tag">Mentoring Maba</span>
+          <span class="feature-tag">Halaqah</span>
+          <span class="feature-tag">Training</span>
+        </div>
+        <a href="mentoring.html" class="program-link">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      
+      <div class="program-card" data-program="digital">
+        <div class="program-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Dakwah Digital</h3>
+        <p>Konten kreatif dan syiar online melalui berbagai platform media sosial.</p>
+        <div class="program-features">
+          <span class="feature-tag">Instagram</span>
+          <span class="feature-tag">YouTube</span>
+          <span class="feature-tag">Blog</span>
+        </div>
+        <a href="dakwah.html" class="program-link">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
   </section>
 
+  <!-- Enhanced Blog Preview -->
+  <section class="content reveal-on-scroll">
+    <h2><i class="fas fa-newspaper"></i> Artikel Terbaru</h2>
+    <div class="blog-preview modern">
+      <div class="blog-card featured">
+        <div class="blog-image">
+          <img src="assets/blog1.jpg" alt="Ilustrasi Al-Quran dan alam semesta">
+          <div class="blog-category">Syiar & Keilmuan</div>
+        </div>
+        <div class="blog-content">
+          <h3><a href="blog/artikel1.html">Saat Sains dan Iman Bertemu di Al-Qur'an</a></h3>
+          <p class="blog-excerpt">Menyingkap fakta-fakta ilmiah modern yang telah diisyaratkan dalam Al-Qur'an...</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> 18 Agu 2025</span>
+            <span><i class="fas fa-user"></i> Divisi Syiar & Keilmuan</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="assets/blog2.jpg" alt="Mahasiswa di lingkungan kampus">
+          <div class="blog-category">Dakwah</div>
+        </div>
+        <div class="blog-content">
+          <h3><a href="blog/artikel2.html">Dakwah Kampus: Cahaya yang Tak Boleh Padam</a></h3>
+          <p class="blog-excerpt">Mengapa dakwah di kampus itu penting dan bagaimana cara menjadi bagian dari perubahan...</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> 19 Agu 2025</span>
+            <span><i class="fas fa-user"></i> Divisi Syiar & Keilmuan</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <div class="blog-image">
+          <img src="assets/blog3.jpg" alt="Ilustrasi islami">
+          <div class="blog-category">Inspirasi</div>
+        </div>
+        <div class="blog-content">
+          <h3><a href="blog/artikel3.html">Kisah Ajaib di Balik Istighfar Penjual Roti</a></h3>
+          <p class="blog-excerpt">Sebuah kisah nyata yang mengharukan tentang kekuatan istighfar...</p>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> 19 Agu 2025</span>
+            <span><i class="fas fa-user"></i> Divisi Syiar & Keilmuan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="blog/index.html" class="btn-primary view-all">
+      <i class="fas fa-newspaper"></i>
+      Lihat Semua Artikel
+    </a>
+  </section>
+
+  <!-- Enhanced Documentation Section -->
   <section class="content reveal-on-scroll">
     <h2><i class="fas fa-camera"></i> Dokumentasi Kegiatan</h2>
-    <div class="gallery">
-      <img src="assets/doc1.jpg" alt="Foto bersama peserta kajian LDKS FST">
-      <img src="assets/doc2.jpg" alt="Suasana kegiatan mentoring mahasiswa baru">
-      <img src="assets/doc3.jpg" alt="Kegiatan bakti sosial LDKS FST di desa binaan">
+    <div class="gallery modern">
+      <div class="gallery-item">
+        <img src="assets/doc1.jpg" alt="Foto bersama peserta kajian LDKS FST">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <h4>Kajian Rutin</h4>
+            <p>Kajian bersama ustadz tamu</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/doc2.jpg" alt="Suasana kegiatan mentoring mahasiswa baru">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <h4>Mentoring Maba</h4>
+            <p>Pembinaan mahasiswa baru</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/doc3.jpg" alt="Kegiatan bakti sosial LDKS FST di desa binaan">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <h4>Bakti Sosial</h4>
+            <p>Pengabdian kepada masyarakat</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <a href="dokumentasi.html" class="btn-selengkapnya">Lihat Semua Dokumentasi</a>
+    <a href="dokumentasi.html" class="btn-primary view-all">
+      <i class="fas fa-images"></i>
+      Lihat Semua Dokumentasi
+    </a>
   </section>
 
-  <footer>
-    <div class="social-icons">
-      <a href="mailto:jadibaikfst@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <!-- Enhanced Footer -->
+  <footer class="footer-modern">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Logo LDKS FST">
+          <h3>LDKS FST</h3>
+        </div>
+        <p>Lembaga Dakwah Kampus Syahid Fakultas Sains dan Teknologi UIN Syarif Hidayatullah Jakarta</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Program</h4>
+        <ul>
+          <li><a href="syiar.html">Syiar</a></li>
+          <li><a href="keilmuan.html">Keilmuan</a></li>
+          <li><a href="mentoring.html">Mentoring</a></li>
+          <li><a href="dakwah.html">Dakwah Digital</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Kontak</h4>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> jadibaikfst@gmail.com</p>
+          <p><i class="fab fa-instagram"></i> @ldksyahid_fst</p>
+          <p><i class="fas fa-map-marker-alt"></i> FST UIN Jakarta</p>
+        </div>
+      </div>
     </div>
-    <p>© 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
+    
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="mailto:jadibaikfst@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
+    </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="intro.js"></script>
   <script src="script.js"></script>

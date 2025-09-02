@@ -10,16 +10,19 @@
 </head>
 <body>
   <nav class="navbar">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Logo LDKS FST UIN Jakarta"></a>
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Logo LDKS FST UIN Jakarta">
+      <span class="logo-text">LDKS FST</span>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Beranda</a></li>
       <li class="dropdown">
         <a href="#">Program <i class="fas fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="syiar.html" class="active">Syiar</a></li>
-          <li><a href="keilmuan.html">Keilmuan</a></li>
-          <li><a href="mentoring.html">Mentoring</a></li>
-          <li><a href="dakwah.html">Dakwah Digital</a></li>
+          <li><a href="syiar.html" class="active"><i class="fas fa-bullhorn"></i> Syiar</a></li>
+          <li><a href="keilmuan.html"><i class="fas fa-flask"></i> Keilmuan</a></li>
+          <li><a href="mentoring.html"><i class="fas fa-users"></i> Mentoring</a></li>
+          <li><a href="dakwah.html"><i class="fas fa-laptop-code"></i> Dakwah Digital</a></li>
         </ul>
       </li>
       <li><a href="blog/index.html">Blog</a></li>
@@ -32,26 +35,321 @@
   </nav>
 
   <header class="hero">
-    <h1>Program Syiar</h1>
-    <p class="typing-text">Menyebarkan dakwah melalui kajian, media kreatif, dan publikasi</p>
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+      <div class="floating-elements">
+        <div class="float-item float-1"><i class="fas fa-mosque"></i></div>
+        <div class="float-item float-2"><i class="fas fa-bullhorn"></i></div>
+        <div class="float-item float-3"><i class="fas fa-heart"></i></div>
+        <div class="float-item float-4"><i class="fas fa-star-and-crescent"></i></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1 class="gradient-text">Program Syiar</h1>
+      <p class="typing-text">Menyebarkan dakwah melalui kajian, media kreatif, dan publikasi</p>
+    </div>
   </header>
 
-  <section class="content">
+  <section class="content reveal-on-scroll">
     <h2><i class="fas fa-bullhorn"></i> Agenda Syiar</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Kajian Rutin</h3><p>Kajian setiap pekan bersama ustadz & ustadzah.</p></div>
-      <div class="card"><h3>Syiar Kreatif</h3><p>Konten desain, video dakwah, dan publikasi digital.</p></div>
-      <div class="card"><h3>Open Donasi</h3><p>Gerakan peduli umat melalui infak & sedekah.</p></div>
+    <p class="section-description">
+      Program Syiar adalah jantung dakwah LDKS FST yang menghadirkan berbagai kegiatan untuk menyebarkan nilai-nilai Islam melalui pendekatan yang kreatif, relevan, dan menyentuh hati.
+    </p>
+    
+    <div class="tab-menu modern">
+      <button class="tab-btn active" data-tab="kajian">
+        <i class="fas fa-book-open"></i>
+        Kajian Rutin
+      </button>
+      <button class="tab-btn" data-tab="kreatif">
+        <i class="fas fa-palette"></i>
+        Syiar Kreatif
+      </button>
+      <button class="tab-btn" data-tab="donasi">
+        <i class="fas fa-hand-holding-heart"></i>
+        Open Donasi
+      </button>
+    </div>
+
+    <div class="tab-content active" id="kajian">
+      <div class="tab-content-wrapper">
+        <div class="content-icon">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <h3>Kajian Rutin Mingguan</h3>
+        <p>Setiap pekan, kami menghadirkan kajian Islam dengan ustadz dan ustadzah terpilih. Kajian ini menjadi wadah untuk mendalami ilmu agama, berbagi inspirasi, dan mempererat ukhuwah sesama mahasiswa Muslim FST.</p>
+        
+        <div class="features-grid">
+          <div class="feature-item">
+            <i class="fas fa-calendar-week"></i>
+            <h4>Jadwal Rutin</h4>
+            <p>Setiap Jumat setelah sholat Jumat di Musala FST</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-users"></i>
+            <h4>Pembicara Berkualitas</h4>
+            <p>Ustadz dan ustadzah dari berbagai latar belakang keilmuan</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-comments"></i>
+            <h4>Diskusi Interaktif</h4>
+            <p>Sesi tanya jawab dan diskusi setelah penyampaian materi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="kreatif">
+      <div class="tab-content-wrapper">
+        <div class="content-icon">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3>Syiar Kreatif</h3>
+        <p>Mengemas pesan-pesan Islam dalam bentuk konten yang menarik, modern, dan mudah dipahami. Dari poster kajian hingga video pendek yang viral di media sosial.</p>
+        
+        <div class="creative-showcase">
+          <div class="showcase-item">
+            <div class="showcase-icon">
+              <i class="fas fa-image"></i>
+            </div>
+            <h4>Desain Grafis</h4>
+            <p>Poster kajian, infografis islami, dan konten visual untuk media sosial</p>
+          </div>
+          <div class="showcase-item">
+            <div class="showcase-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h4>Video Dakwah</h4>
+            <p>Konten video pendek, motion graphics, dan dokumentasi kegiatan</p>
+          </div>
+          <div class="showcase-item">
+            <div class="showcase-icon">
+              <i class="fas fa-pen-fancy"></i>
+            </div>
+            <h4>Konten Tulisan</h4>
+            <p>Caption inspiratif, artikel blog, dan quote harian</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="donasi">
+      <div class="tab-content-wrapper">
+        <div class="content-icon">
+          <i class="fas fa-hand-holding-heart"></i>
+        </div>
+        <h3>Open Donasi</h3>
+        <p>Gerakan kepedulian untuk membantu sesama melalui program infak, sedekah, dan bantuan sosial. Bersama-sama kita wujudkan kepedulian nyata kepada yang membutuhkan.</p>
+        
+        <div class="donation-programs">
+          <div class="donation-item">
+            <div class="donation-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>Beasiswa Anak Yatim</h4>
+            <p>Program bantuan pendidikan untuk anak-anak yatim piatu dan dhuafa</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+            <span class="progress-text">75% tercapai</span>
+          </div>
+          
+          <div class="donation-item">
+            <div class="donation-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h4>Renovasi Musala</h4>
+            <p>Perbaikan dan peningkatan fasilitas musala untuk kenyamanan ibadah</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 45%"></div>
+            </div>
+            <span class="progress-text">45% tercapai</span>
+          </div>
+          
+          <div class="donation-item">
+            <div class="donation-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h4>Buka Puasa Bersama</h4>
+            <p>Program berbagi takjil dan buka puasa untuk mahasiswa dan masyarakat sekitar</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 90%"></div>
+            </div>
+            <span class="progress-text">90% tercapai</span>
+          </div>
+        </div>
+        
+        <div class="donation-cta">
+          <h4>Mari Berpartisipasi dalam Kebaikan</h4>
+          <p>Setiap rupiah yang Anda donasikan adalah investasi untuk akhirat</p>
+          <a href="#" class="btn-primary donation-btn">
+            <i class="fas fa-heart"></i>
+            Donasi Sekarang
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div class="social-icons">
-      <a href="mailto:jadibaikfst@gmail.com" title="Email LDKS FST"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank" title="Instagram LDKS FST"><i class="fab fa-instagram"></i></a>
+  <!-- Enhanced Impact Section -->
+  <section class="content reveal-on-scroll impact-section">
+    <h2><i class="fas fa-chart-line"></i> Dampak Program Syiar</h2>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-number" data-target="48">0</div>
+        <div class="impact-label">Kajian Terlaksana</div>
+        <div class="impact-period">Tahun 2024</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-number" data-target="1200">0</div>
+        <div class="impact-label">Peserta Kajian</div>
+        <div class="impact-period">Total Keseluruhan</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-number" data-target="85">0</div>
+        <div class="impact-label">Konten Kreatif</div>
+        <div class="impact-period">Per Semester</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-number" data-target="15">0</div>
+        <div class="impact-label">Juta Rupiah</div>
+        <div class="impact-period">Dana Terkumpul</div>
+      </div>
     </div>
-    <p>© 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="content reveal-on-scroll testimonial-section">
+    <h2><i class="fas fa-quote-right"></i> Testimoni Peserta</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-track">
+        <div class="testimonial-card active">
+          <div class="testimonial-content">
+            <p>"Kajian di LDKS FST selalu memberikan pencerahan baru. Materi yang disampaikan tidak hanya teoritis tapi juga applicable dalam kehidupan sehari-hari sebagai mahasiswa."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Sarah Muslimah</h4>
+              <span>Mahasiswa Biologi 2023</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Program donasi LDKS FST sangat transparan dan tepat sasaran. Saya merasa berkontribusi langsung untuk kebaikan umat melalui platform yang terpercaya."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Ahmad Faqih</h4>
+              <span>Mahasiswa Kimia 2022</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Konten syiar kreatif LDKS FST di Instagram selalu menginspirasi. Designnya modern tapi tetap syar'i, cocok untuk generasi muda seperti kita."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="author-info">
+              <h4>Fatimah Az-Zahra</h4>
+              <span>Mahasiswa Matematika 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="testimonial-btn active" data-slide="0"></button>
+        <button class="testimonial-btn" data-slide="1"></button>
+        <button class="testimonial-btn" data-slide="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="content reveal-on-scroll cta-section">
+    <div class="cta-container">
+      <div class="cta-content">
+        <h2>Bergabunglah dalam Gerakan Syiar</h2>
+        <p>Jadilah bagian dari komunitas yang peduli menyebarkan kebaikan dan dakwah di kampus</p>
+        <div class="cta-buttons">
+          <a href="join.html" class="btn-primary">
+            <i class="fas fa-user-plus"></i>
+            Daftar Sekarang
+          </a>
+          <a href="info.html" class="btn-secondary">
+            <i class="fas fa-info-circle"></i>
+            Pelajari Lebih Lanjut
+          </a>
+        </div>
+      </div>
+      <div class="cta-visual">
+        <div class="cta-circle">
+          <i class="fas fa-mosque"></i>
+        </div>
+        <div class="cta-particles"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer class="footer-modern">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Logo LDKS FST">
+          <h3>LDKS FST</h3>
+        </div>
+        <p>Lembaga Dakwah Kampus Syahid Fakultas Sains dan Teknologi UIN Syarif Hidayatullah Jakarta</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Program</h4>
+        <ul>
+          <li><a href="syiar.html">Syiar</a></li>
+          <li><a href="keilmuan.html">Keilmuan</a></li>
+          <li><a href="mentoring.html">Mentoring</a></li>
+          <li><a href="dakwah.html">Dakwah Digital</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Kontak</h4>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> jadibaikfst@gmail.com</p>
+          <p><i class="fab fa-instagram"></i> @ldksyahid_fst</p>
+          <p><i class="fas fa-map-marker-alt"></i> FST UIN Jakarta</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="mailto:jadibaikfst@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
+    </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>

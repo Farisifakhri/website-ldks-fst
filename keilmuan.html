@@ -4,23 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Program Keilmuan - LDKS FST</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png"> 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
   <nav class="navbar">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="LDKS FST Logo"></a>
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Logo LDKS FST UIN Jakarta">
+      <span class="logo-text">LDKS FST</span>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Beranda</a></li>
       <li class="dropdown">
         <a href="#">Program <i class="fas fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="syiar.html">Syiar</a></li>
-          <li><a href="keilmuan.html" class="active">Keilmuan</a></li>
-          <li><a href="mentoring.html">Mentoring</a></li>
-          <li><a href="dakwah.html">Dakwah Digital</a></li>
+          <li><a href="syiar.html"><i class="fas fa-bullhorn"></i> Syiar</a></li>
+          <li><a href="keilmuan.html" class="active"><i class="fas fa-flask"></i> Keilmuan</a></li>
+          <li><a href="mentoring.html"><i class="fas fa-users"></i> Mentoring</a></li>
+          <li><a href="dakwah.html"><i class="fas fa-laptop-code"></i> Dakwah Digital</a></li>
         </ul>
       </li>
       <li><a href="blog/index.html">Blog</a></li>
@@ -29,59 +31,357 @@
       <li><a href="join.html">How to Join Us</a></li>
       <li><a href="tentang.html">Tentang Kami</a></li>
     </ul>
-    </nav>
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+  </nav>
 
   <header class="hero">
-    <h1>Program Keilmuan & Sains</h1>
-    <p class="typing-text">Mengasah intelektualitas dalam bingkai nilai-nilai Islam.</p>
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+      <div class="floating-elements">
+        <div class="float-item float-1"><i class="fas fa-atom"></i></div>
+        <div class="float-item float-2"><i class="fas fa-dna"></i></div>
+        <div class="float-item float-3"><i class="fas fa-microscope"></i></div>
+        <div class="float-item float-4"><i class="fas fa-rocket"></i></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1 class="gradient-text">Program Keilmuan & Sains</h1>
+      <p class="typing-text">Mengasah intelektualitas dalam bingkai nilai-nilai Islam</p>
+    </div>
   </header>
 
-  <section class="content">
-    <div class="tab-menu">
-      <button class="tab-btn active" data-tab="workshop">Workshop IT</button>
-      <button class="tab-btn" data-tab="science">Science Talk</button>
-      <button class="tab-btn" data-tab="agenda">Agenda</button>
+  <section class="content reveal-on-scroll">
+    <h2><i class="fas fa-flask"></i> Mengintegrasikan Sains dan Islam</h2>
+    <p class="section-description">
+      Program Keilmuan LDKS FST dirancang untuk membuktikan bahwa sains dan Islam adalah dua hal yang saling menguatkan, bukan bertentangan. Melalui berbagai kegiatan ilmiah dan diskusi mendalam, kami membangun generasi Muslim yang cerdas dan beriman.
+    </p>
+    
+    <div class="tab-menu modern">
+      <button class="tab-btn active" data-tab="workshop">
+        <i class="fas fa-laptop-code"></i>
+        Workshop IT
+      </button>
+      <button class="tab-btn" data-tab="science">
+        <i class="fas fa-microscope"></i>
+        Science Talk
+      </button>
+      <button class="tab-btn" data-tab="mindink">
+        <i class="fas fa-brain"></i>
+        Mind & Ink
+      </button>
     </div>
 
     <div class="tab-content active" id="workshop">
-      <h3>Workshop IT</h3>
-      <p>Dari Python hingga Machine Learning! 💻 
-      Tingkatkan hard skill-mu melalui workshop praktis yang dibimbing langsung oleh para ahli. 
-      Siap jadi teknokrat Muslim berdaya saing global.</p>
+      <div class="tab-content-wrapper">
+        <div class="content-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Workshop IT & Programming</h3>
+        <p>Dari Python hingga Machine Learning! Tingkatkan hard skill-mu melalui workshop praktis yang dibimbing langsung oleh para ahli. Siap jadi teknokrat Muslim berdaya saing global.</p>
+        
+        <div class="workshop-timeline">
+          <div class="timeline-item completed">
+            <div class="timeline-marker">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="timeline-content">
+              <h4>Python Fundamentals</h4>
+              <p>Workshop dasar-dasar pemrograman Python untuk data science</p>
+              <span class="timeline-date">Maret 2025</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item completed">
+            <div class="timeline-marker">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="timeline-content">
+              <h4>Web Development</h4>
+              <p>Belajar HTML, CSS, JavaScript untuk membuat website dakwah</p>
+              <span class="timeline-date">April 2025</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item active">
+            <div class="timeline-marker">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="timeline-content">
+              <h4>Machine Learning Basics</h4>
+              <p>Pengenalan AI dan machine learning untuk analisis data</p>
+              <span class="timeline-date">September 2025</span>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="timeline-content">
+              <h4>Mobile App Development</h4>
+              <p>Membuat aplikasi mobile untuk dakwah dan pendidikan</p>
+              <span class="timeline-date">Oktober 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="tab-content" id="science">
-      <h3>Science Talk</h3>
-      <p>Saat Sains bertemu Iman. 🌌 
-      Forum bulanan yang mengupas keajaiban alam semesta dari perspektif Al-Qur'an dan sains modern.</p>
+      <div class="tab-content-wrapper">
+        <div class="content-icon">
+          <i class="fas fa-microscope"></i>
+        </div>
+        <h3>Science Talk: Sains Bertemu Iman</h3>
+        <p>Forum bulanan yang mengupas keajaiban alam semesta dari perspektif Al-Qur'an dan sains modern. Membuktikan bahwa semakin dalam kita memahami sains, semakin takjub kita pada kebesaran Allah.</p>
+        
+        <div class="science-topics">
+          <div class="topic-card">
+            <div class="topic-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h4>Biologi & Kehidupan</h4>
+            <p>Menjelajahi keajaiban penciptaan makhluk hidup dari perspektif Al-Qur'an</p>
+            <div class="topic-progress">
+              <span class="progress-label">Progress topik</span>
+              <div class="mini-progress">
+                <div class="mini-progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="topic-card">
+            <div class="topic-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h4>Geologi & Bumi</h4>
+            <p>Memahami struktur bumi dan fenomena alam dalam pandangan Islam</p>
+            <div class="topic-progress">
+              <span class="progress-label">Progress topik</span>
+              <div class="mini-progress">
+                <div class="mini-progress-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="topic-card">
+            <div class="topic-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Astronomi & Kosmologi</h4>
+            <p>Menelaah kebesaran alam semesta yang disebutkan dalam Al-Qur'an</p>
+            <div class="topic-progress">
+              <span class="progress-label">Progress topik</span>
+              <div class="mini-progress">
+                <div class="mini-progress-fill" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="tab-content" id="agenda">
-    <h3><i class="fas fa-book-open"></i> Mind & Ink: Forum Kritis Kader</h3>
-    <p>
-        [cite_start]Sebagai ikhtiar dakwah intelektual, "Mind & Ink" adalah forum diskusi dan penulisan karya ilmiah-populer untuk kader LDK Syahid FST. [cite: 25] [cite_start]Program ini dirancang untuk mengasah kemampuan berpikir kritis dan menyuarakan gagasan berkualitas yang berlandaskan nilai keislaman. [cite: 26]
-    </p>
+    <div class="tab-content" id="mindink">
+      <div class="tab-content-wrapper">
+        <div class="content-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>Mind & Ink: Forum Kritis Kader</h3>
+        <p>Sebagai ikhtiar dakwah intelektual, "Mind & Ink" adalah forum diskusi dan penulisan karya ilmiah-populer untuk kader LDK Syahid FST. Program ini dirancang untuk mengasah kemampuan berpikir kritis dan menyuarakan gagasan berkualitas yang berlandaskan nilai keislaman.</p>
+        
+        <div class="mindink-features">
+          <div class="feature-card">
+            <div class="feature-header">
+              <i class="fas fa-comments"></i>
+              <h4>Diskusi Kritis</h4>
+            </div>
+            <p>Forum diskusi mendalam tentang isu-isu kontemporer dengan pendekatan akademis dan islami</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-header">
+              <i class="fas fa-pen-nib"></i>
+              <h4>Penulisan Karya</h4>
+            </div>
+            <p>Pelatihan menulis artikel ilmiah-populer dan opini berdasarkan hasil diskusi</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-header">
+              <i class="fas fa-lightbulb"></i>
+              <h4>Pemikiran Kritis</h4>
+            </div>
+            <p>Mengasah kemampuan analisis dan berpikir kritis sesuai dengan metode ilmiah Islam</p>
+          </div>
+        </div>
+        
+        <div class="current-discussion">
+          <div class="discussion-badge">
+            <i class="fas fa-fire"></i>
+            <span>Diskusi Terkini</span>
+          </div>
+          <h4>"Alih Fungsi Hutan & Lahan Sawit: Tinjauan Ekologis, Etis, dan Konstitusional"</h4>
+          <p>Menelaah secara kritis pernyataan Presiden Terpilih Prabowo Subianto terkait alih fungsi hutan menjadi lahan kelapa sawit. Peserta diajak untuk menganalisis isu ini dari berbagai sudut pandang, mulai dari lingkungan, kebijakan publik, hingga etika Islam sebagai khalifah di bumi.</p>
+          
+          <div class="discussion-info">
+            <div class="info-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Rabu, 14 Mei 2025, Pukul 16.15 WIB</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Lobi FST Lantai 1</span>
+            </div>
+          </div>
+          
+          <a href="blog/mind-and-ink-diskusi1.html" class="btn-primary discussion-btn">
+            <i class="fas fa-book-open"></i>
+            Baca Hasil Diskusi
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Showcase -->
+  <section class="content reveal-on-scroll research-section">
+    <h2><i class="fas fa-search"></i> Riset & Publikasi</h2>
+    <div class="research-stats">
+      <div class="research-stat">
+        <div class="stat-icon">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <div class="stat-number" data-target="24">0</div>
+        <div class="stat-label">Artikel Ilmiah</div>
+      </div>
+      <div class="research-stat">
+        <div class="stat-icon">
+          <i class="fas fa-presentation"></i>
+        </div>
+        <div class="stat-number" data-target="12">0</div>
+        <div class="stat-label">Presentasi Seminar</div>
+      </div>
+      <div class="research-stat">
+        <div class="stat-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="stat-number" data-target="8">0</div>
+        <div class="stat-label">Penghargaan</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events -->
+  <section class="content reveal-on-scroll events-section">
+    <h2><i class="fas fa-calendar-check"></i> Agenda Mendatang</h2>
+    <div class="events-timeline">
+      <div class="event-item">
+        <div class="event-date">
+          <span class="date-day">15</span>
+          <span class="date-month">Sep</span>
+        </div>
+        <div class="event-details">
+          <h4>Workshop Machine Learning untuk Pemula</h4>
+          <p>Belajar dasar-dasar AI dan implementasinya dalam kehidupan sehari-hari</p>
+          <div class="event-meta">
+            <span><i class="fas fa-clock"></i> 14:00 - 17:00 WIB</span>
+            <span><i class="fas fa-map-marker-alt"></i> Lab Komputer FST</span>
+          </div>
+        </div>
+        <div class="event-status available">
+          <i class="fas fa-ticket-alt"></i>
+          <span>Tersedia</span>
+        </div>
+      </div>
+      
+      <div class="event-item">
+        <div class="event-date">
+          <span class="date-day">22</span>
+          <span class="date-month">Sep</span>
+        </div>
+        <div class="event-details">
+          <h4>Science Talk: Keajaiban Matematika dalam Al-Qur'an</h4>
+          <p>Mengupas fenomena matematika dan pola-pola numerik dalam kitab suci</p>
+          <div class="event-meta">
+            <span><i class="fas fa-clock"></i> 15:30 - 17:30 WIB</span>
+            <span><i class="fas fa-map-marker-alt"></i> Auditorium FST</span>
+          </div>
+        </div>
+        <div class="event-status available">
+          <i class="fas fa-ticket-alt"></i>
+          <span>Tersedia</span>
+        </div>
+      </div>
+      
+      <div class="event-item">
+        <div class="event-date">
+          <span class="date-day">05</span>
+          <span class="date-month">Okt</span>
+        </div>
+        <div class="event-details">
+          <h4>Mind & Ink Session 2: Etika AI dalam Islam</h4>
+          <p>Diskusi kritis tentang perkembangan kecerdasan buatan dari perspektif etika Islam</p>
+          <div class="event-meta">
+            <span><i class="fas fa-clock"></i> 16:15 - 18:00 WIB</span>
+            <span><i class="fas fa-map-marker-alt"></i> Lobi FST Lantai 1</span>
+          </div>
+        </div>
+        <div class="event-status coming-soon">
+          <i class="fas fa-hourglass-half"></i>
+          <span>Segera</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer class="footer-modern">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Logo LDKS FST">
+          <h3>LDKS FST</h3>
+        </div>
+        <p>Lembaga Dakwah Kampus Syahid Fakultas Sains dan Teknologi UIN Syarif Hidayatullah Jakarta</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Program</h4>
+        <ul>
+          <li><a href="syiar.html">Syiar</a></li>
+          <li><a href="keilmuan.html">Keilmuan</a></li>
+          <li><a href="mentoring.html">Mentoring</a></li>
+          <li><a href="dakwah.html">Dakwah Digital</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Kontak</h4>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> jadibaikfst@gmail.com</p>
+          <p><i class="fab fa-instagram"></i> @ldksyahid_fst</p>
+          <p><i class="fas fa-map-marker-alt"></i> FST UIN Jakarta</p>
+        </div>
+      </div>
+    </div>
     
-    <div class="event-highlight">
-    <h4>Diskusi Perdana: "Alih Fungsi Hutan & Lahan Sawit: Tinjauan Ekologis, Etis, dan Konstitusional"</h4>
-    <p>
-        Menelaah secara kritis pernyataan Presiden Terpilih Prabowo Subianto terkait alih fungsi hutan menjadi lahan kelapa sawit. Peserta diajak untuk menganalisis isu ini dari berbagai sudut pandang, mulai dari lingkungan, kebijakan publik, hingga etika Islam sebagai khalifah di bumi.
-    </p>
-    <p>
-        <strong><i class="fas fa-calendar-alt"></i> Waktu:</strong> Rabu, 14 Mei 2025, Pukul 16.15 WIB<br>
-        <strong><i class="fas fa-map-marker-alt"></i> Tempat:</strong> Lobi FST Lantai 1
-    </p>
-    <a href="blog/mind-and-ink-diskusi1.html" class="btn-read" style="margin-top: 1rem;">Baca Hasil Diskusi</a>
-</div>
-
-  <footer>
-    <div class="social-icons">
-      <a href="mailto:jadibaikfst@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="mailto:jadibaikfst@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p>&copy; 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
     </div>
-    <p>© 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
-  </footer>
-  
+
+     <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <script src="script.js"></script>
 </body>
 </html>
