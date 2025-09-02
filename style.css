@@ -3032,3 +3032,140 @@ body.dark .blog-card {
     color: #ffdd57; /* Warna kuning untuk status habis */
     padding: 0.5rem;
 }
+
+/* ==========================================================
+   JOIN PAGE STYLES — Gaya Khusus untuk Halaman How to Join Us
+   ========================================================== */
+
+.join-steps-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  counter-reset: step-counter;
+}
+
+.join-step {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  align-items: flex-start;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-light));
+  color: var(--text-inverse);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-lg);
+}
+
+.step-content {
+  background: var(--bg-surface);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  text-align: left;
+  box-shadow: var(--shadow-md);
+  border: 1px solid #e2e8f0;
+}
+
+.step-content h3 {
+  color: var(--brand-dark);
+  margin-bottom: 1rem;
+}
+
+.step-content p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checklist li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.payment-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.payment-list li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.note {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.join-button {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.faq-section {
+  background: #f8fafc;
+}
+
+.contact-person-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.contact-card {
+  background: var(--bg-surface);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.contact-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.contact-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .contact-person-grid {
+    grid-template-columns: 1fr;
+  }
+}
