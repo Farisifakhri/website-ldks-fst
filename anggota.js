@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const members = [
         // BPH (Badan Pengurus Harian)
-        { name: "Muhammad Syafiq Radyan", major: "Kimia", year: 2023, division: "BPH", position: "Ketua Umum", photo: "syafiq.png", instagram: "muhammadsyafiq25_", quote: "Memimpin dengan hati, berdakwah dengan aksi." },
+        { name: "Muhammad Syafiq Radyan", major: "Kimia", year: 2023, division: "BPH", position: "Ketua Umum", photo: "syafiq.jpg", instagram: "muhammadsyafiq25_", quote: "Memimpin dengan hati, berdakwah dengan aksi." },
         { name: "Nur Anisa Lisnia Dewi", major: "Matematika", year: 2023, division: "BPH", position: "Ketua Keputrian", photo: "nuranisa.png", instagram: "nalisniadewi_", quote: "Menjadi muslimah cerdas yang menginspirasi sesama." },
         { name: "Ammar Hawari", major: "Matematika", year: 2023, division: "BPH", position: "Sekretaris Jendral", photo: "ammar.png", instagram: "ammrhwri_", quote: "Kebaikan itu menular, mari kita mulai dari diri sendiri." },
-        { name: "Izhara Fania Citradewi", major: "Biologi", year: 2023, division: "BPH", position: "Bendahara", photo: "izhara.jpg", instagram: "izharafc", quote: "Amanah dalam setiap hitungan, berkah dalam setiap langkah." },
-        { name: "Muhammad Rizki Hariyanto", major: "Sistem Informasi", year: 2024, division: "BPH", position: "Wakil Sekretaris", photo: "hariyanto.jpg", instagram: "rizkihariyanto", quote: "Administrasi rapi, dakwah pun lancar." },
-        { name: "Najma Fawza", major: "Matematika", year: 2024, division: "BPH", position: "Wakil Bendahara", photo: "najma.jpg", instagram: "najmafawza", quote: "Teliti dalam mengelola, ikhlas dalam melayani." },
+        { name: "Izhara Fania Citradewi", major: "Biologi", year: 2023, division: "BPH", position: "Bendahara", photo: "izhara.jpg", instagram: "", quote: "Amanah dalam setiap hitungan, berkah dalam setiap langkah." },
+        { name: "Muhammad Rizki Hariyanto", major: "Sistem Informasi", year: 2024, division: "BPH", position: "Wakil Sekretaris", photo: "hariyanto.png", instagram: "mrizkihariyan", quote: "Administrasi rapi, dakwah pun lancar." },
+        { name: "Najma Fawza", major: "Matematika", year: 2024, division: "BPH", position: "Wakil Bendahara", photo: "najma.jpg", instagram: "", quote: "Teliti dalam mengelola, ikhlas dalam melayani." },
 
         // PSDM (Pengembangan Sumber Daya Muslim)
-        { name: "Muhammad Amar Primus Firdaus", major: "Matematika", year: 2023, division: "PSDM", position: "Koordinator Ikhwan", photo: "amar.jpg", instagram: "amarprimus", quote: "Kaderisasi adalah jantung organisasi, mari rawat bersama." },
-        { name: "Nesya Ayu Syifa Yanti", major: "Kimia", year: 2023, division: "PSDM", position: "Koordinator Akhwat", photo: "nesya.jpg", instagram: "nesyaasy", quote: "Setiap langkah kecil dalam pembinaan adalah investasi masa depan." },
+        { name: "Muhammad Amar Primus Firdaus", major: "Matematika", year: 2023, division: "PSDM", position: "Koordinator Ikhwan", photo: "amar.png", instagram: "amarfirdaus09", quote: "Kaderisasi adalah jantung organisasi, mari rawat bersama." },
+        { name: "Nesya Ayu Syifa Yanti", major: "Kimia", year: 2023, division: "PSDM", position: "Koordinator Akhwat", photo: "nesya.png", instagram: "sya.nes_", quote: "Setiap langkah kecil dalam pembinaan adalah investasi masa depan." },
         { name: "Lira Marcella", major: "Biologi", year: 2023, division: "PSDM", position: "Anggota", photo: "lira.jpg", instagram: "liramarcella", quote: "Belajar bersama, tumbuh bersama, kuat bersama." },
         { name: "Muhammad Hafidz Rizky Rahmawan", major: "Teknik Informatika", year: 2024, division: "PSDM", position: "Anggota", photo: "hafidz.jpg", instagram: "hafidzrr", quote: "Membentuk generasi Rabbani yang siap memimpin." },
         { name: "Nayla Taqiyya", major: "Teknik Informatika", year: 2024, division: "PSDM", position: "Anggota", photo: "nayla.jpg", instagram: "naylataqiyya", quote: "Ukhuwah adalah perekat barisan dakwah." },
