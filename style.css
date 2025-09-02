@@ -698,6 +698,7 @@
     width: 60px;
     height: 60px;
   }
+}
   
 /* ============= WORKSHOP TIMELINE ============= */
 .workshop-timeline {
@@ -2581,4 +2582,302 @@ body.dark .blog-card {
   color: var(--brand-2);
   margin: 1rem 0;
   font-size: 1.1rem;
+}
+
+/* ==========================================================
+   BLOG PAGE STYLES — Gaya Khusus Halaman Blog & Artikel
+   ========================================================== */
+
+.blog-header {
+  background: var(--bg-surface);
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.blog-header h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--brand);
+  margin-bottom: 1rem;
+}
+
+.blog-header p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--bg-page);
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--brand-light);
+  background: transparent;
+  color: var(--brand);
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition-normal);
+}
+
+.filter-btn:hover {
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.filter-btn.active {
+  background: var(--brand);
+  color: var(--text-inverse);
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-list .blog-card {
+  text-align: left;
+}
+
+.blog-list .blog-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-list .blog-card .blog-content {
+  padding: 1.5rem;
+}
+
+.btn-read {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background: var(--brand-2);
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.btn-read:hover {
+  background: var(--brand-2-light);
+}
+
+/* --- Single Article Page --- */
+.blog-article {
+  padding: 8rem 2rem 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.blog-article h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.blog-article .meta {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.blog-article .featured-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+}
+
+.blog-article h3 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--brand-dark);
+}
+
+.blog-article p, .blog-article li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.blog-article ul {
+  padding-left: 1.5rem;
+}
+
+.blog-article .quote {
+  border-left: 4px solid var(--brand-2);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* ==========================================================
+   INFO PAGE STYLES — Gaya Khusus untuk Halaman Info Kegiatan
+   ========================================================== */
+
+.event-showcase-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.event-poster-container {
+  position: sticky;
+  top: 120px; /* Jarak dari navbar */
+}
+
+.event-poster-main {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-2xl);
+  transition: var(--transition-normal);
+}
+
+.event-poster-main:hover {
+  transform: scale(1.03);
+}
+
+.event-badge-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, var(--brand-2), var(--brand-2-light));
+  color: var(--text-main);
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.event-details-container h3 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.event-theme {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.info-tabs {
+  margin-bottom: 2.5rem;
+}
+
+.info-tab {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tab-toggle {
+  display: none;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.tab-label::after {
+  content: '\f078'; /* Font Awesome chevron down */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  transition: var(--transition-normal);
+}
+
+.tab-toggle:checked ~ .tab-label::after {
+  transform: rotate(180deg);
+}
+
+.tab-content-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  padding: 0;
+}
+
+.tab-toggle:checked ~ .tab-content-panel {
+  max-height: 500px; /* Cukup besar untuk menampung konten */
+  padding-bottom: 1.5rem;
+}
+
+.tab-content-panel ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.tab-content-panel li {
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.tab-content-panel li::before {
+  content: '✓';
+  color: var(--success);
+  position: absolute;
+  left: 0;
+}
+
+.event-cta-btn {
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* Penyesuaian untuk Mobile */
+@media (max-width: 900px) {
+  .event-showcase-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .event-poster-container {
+    position: static;
+    top: auto;
+  }
+}
+
+/* ==========================================================
+   DUAL EVENT GRID STYLES — Untuk menampilkan dua acara di Beranda
+   ========================================================== */
+
+.dual-event-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .dual-event-grid {
+    grid-template-columns: 1fr;
+  }
 }

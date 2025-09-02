@@ -174,51 +174,50 @@ function animateCounter(element) {
 }
 
 // =================================================================== //
-// ⏰ ENHANCED COUNTDOWN TIMER                                          //
+// ⏰ ENHANCED COUNTDOWN TIMER (Multi-instance support)               //
 // =================================================================== //
 function initializeCountdown() {
-  const countdownElement = document.getElementById('countdown');
-  if (!countdownElement) return;
+  const countdownElements = document.querySelectorAll('.countdown-timer');
+  if (countdownElements.length === 0) return;
 
-  // Set target date (September 9, 2025)
-  const targetDate = new Date('2025-09-09T23:59:59').getTime();
+  countdownElements.forEach(element => {
+    const targetDate = new Date(element.dataset.targetDate).getTime();
 
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const timeLeft = targetDate - now;
+    // Buat interval unik untuk setiap elemen countdown
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const timeLeft = targetDate - now;
 
-    if (timeLeft > 0) {
-      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      if (timeLeft > 0) {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-      // Modern countdown display
-      countdownElement.innerHTML = `
-        <div class="countdown-item">
-          <span class="countdown-number">${days}</span>
-          <span class="countdown-label">Hari</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number">${hours}</span>
-          <span class="countdown-label">Jam</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number">${minutes}</span>
-          <span class="countdown-label">Menit</span>
-        </div>
-        <div class="countdown-item">
-          <span class="countdown-number">${seconds}</span>
-          <span class="countdown-label">Detik</span>
-        </div>
-      `;
-    } else {
-      countdownElement.innerHTML = '<div class="countdown-expired">Pendaftaran Ditutup</div>';
-    }
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
+        element.innerHTML = `
+          <div class="countdown-item">
+            <span class="countdown-number">${days}</span>
+            <span class="countdown-label">Hari</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number">${hours}</span>
+            <span class="countdown-label">Jam</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number">${minutes}</span>
+            <span class="countdown-label">Menit</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number">${seconds}</span>
+            <span class="countdown-label">Detik</span>
+          </div>
+        `;
+      } else {
+        element.innerHTML = '<div class="countdown-expired">Waktu Pendaftaran Habis</div>';
+        clearInterval(interval); // Hentikan countdown jika waktu habis
+      }
+    }, 1000);
+  });
 }
 
 // =================================================================== //

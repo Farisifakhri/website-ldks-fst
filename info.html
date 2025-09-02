@@ -10,7 +10,10 @@
 </head>
 <body>
   <nav class="navbar">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="Logo LDKS FST UIN Jakarta"></a>
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Logo LDKS FST UIN Jakarta">
+      <span class="logo-text">LDKS FST</span>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Beranda</a></li>
       <li class="dropdown">
@@ -32,65 +35,84 @@
   </nav>
 
   <header class="hero">
-    <h1>Info Kegiatan</h1>
-    <p class="typing-text">Syahid Fair & Agenda Terdekat</p>
+    <div class="hero-content">
+      <h1 class="gradient-text">Informasi & Agenda</h1>
+      <p class="typing-text">Jangan lewatkan setiap momen kebaikan bersama kami.</p>
+    </div>
   </header>
 
-  <section class="content">
-    <h2><i class="fas fa-star"></i> Syahid Fair 2025</h2>
-    
-    <div class="event-container">
-        <div class="event-poster">
-            <img src="assets/syahid-fair-lomba.png" alt="Poster Lomba Syahid Innovation Challenge 2025">
+  <main>
+    <section class="content reveal-on-scroll">
+      <h2><i class="fas fa-bullhorn"></i> Open Recruitment EKSPRESI 2025</h2>
+      <div class="event-showcase-container">
+        <div class="event-poster-container">
+          <img src="assets/oprec.jpg" alt="Poster Open Recruitment LDK Syahid 2025" class="event-poster-main">
         </div>
-        
-        <div class="event-details">
-            <h3>Syahid Innovation Challenge 2025</h3>
-            <p class="theme">"Membangun Inovasi, Merawat Ukhuwah Menuju Peradaban Berkemajuan"</p>
-            
-            <h4>Sub-Tema</h4>
-            <ul>
-                <li>Ekonomi Kreatif Berbasis Digital di Era 5.0</li>
-                <li>Membangun Ukhuwah di Tengah Keberagaman Beragama</li>
-                <li>Generasi Cerdas Menjaga Kesehatan Mental</li>
-                <li>Optimalisasi AI dalam pendidikan</li>
-            </ul>
-
-            <h4>Hadiah</h4>
-            <ul>
-                <li>Juara 1: Uang Rp300k + Sertifikat</li>
-                <li>Juara 2: Uang Rp200k + Sertifikat</li>
-                <li>Juara 3: Uang Rp100k + Sertifikat</li>
-            </ul>
-
-            <div class="event-timeline">
-                <h4>Timeline Kegiatan</h4>
-                <p><strong>Pendaftaran:</strong> 18 Agustus – 9 September 2025</p>
-                <p><strong>Technical Meeting:</strong> 12 September 2025</p>
-                <p><strong>Pengumpulan Karya:</strong> 13 - 20 September 2025</p>
-                <p><strong>Proses Penjurian:</strong> 21 - 23 September 2025</p>
-                <p><strong>Pengumuman Pemenang:</strong> 24 September 2025</p>
+        <div class="event-details-container">
+          <div class="event-badge-main"><i class="fas fa-rocket"></i><span>Pendaftaran Kader Baru</span></div>
+          <h3>Menjadi Muslim Visioner di Era Digital</h3>
+          <p class="event-theme">"Menjaga Nilai Islam di Tengah Disrupsi Teknologi dan Budaya"</p>
+          <div class="info-tabs">
+            <div class="info-tab">
+              <input type="checkbox" id="tab-kmb" class="tab-toggle" checked>
+              <label for="tab-kmb" class="tab-label"><i class="fas fa-star"></i> Kelas Minat Bakat (KMB)</label>
+              <div class="tab-content-panel">
+                 <ul>
+                  <li>Public Speaking</li> <li>Desain Grafis</li> <li>Microsoft Office</li> <li>Kepenulisan Fiksi</li> <li>Content Creator</li>
+                </ul>
+              </div>
             </div>
-
-            <div class="event-contact">
-                <h4>Narahubung</h4>
-                <p><i class="fas fa-phone"></i> 0838-7895-9161 (Aisyah)</p>
-                <p><i class="fas fa-phone"></i> 0857-7846-7808 (Hariyanto)</p>
+            <div class="info-tab">
+              <input type="checkbox" id="tab-timeline-oprec" class="tab-toggle">
+              <label for="tab-timeline-oprec" class="tab-label"><i class="fas fa-calendar-alt"></i> Linimasa</label>
+              <div class="tab-content-panel">
+                <ul>
+                  <li><strong>Pendaftaran:</strong> 01 Sep – 06 Okt 2025</li>
+                  <li><strong>Technical Meeting:</strong> 09 Okt 2025</li>
+                  <li><strong>Acara Puncak:</strong> 10 - 12 Okt 2025</li>
+                  <li><strong>Lokasi:</strong> Villa Khalifah, Cigombong</li>
+                </ul>
+              </div>
             </div>
-
-            <a href="https://ldksyahid.id/InnovationChallenge" target="_blank" class="btn-selengkapnya">Daftar Sekarang</a>
+          </div>
+          <a href="https://ldksyah.id/ekspresi25" target="_blank" class="btn-primary event-cta-btn"><i class="fas fa-paper-plane"></i> Daftar EKSPRESI 2025</a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <footer>
-    <div class="social-icons">
-      <a href="mailto:jadibaikfst@gmail.com" title="Email LDKS FST"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank" title="Instagram LDKS FST"><i class="fab fa-instagram"></i></a>
-    </div>
-    <p>© 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
-  </footer>
+    <section class="content reveal-on-scroll events-section" id="lomba">
+      <h2><i class="fas fa-star"></i> Acara Lainnya: Syahid Fair 2025</h2>
+      <div class="event-showcase-container">
+        <div class="event-poster-container">
+          <img src="assets/syahid-fair-lomba.png" alt="Poster Lomba Syahid Innovation Challenge 2025" class="event-poster-main">
+        </div>
+        <div class="event-details-container">
+          <div class="event-badge-main"><i class="fas fa-trophy"></i><span>Lomba Poster Digital</span></div>
+          <h3>Syahid Innovation Challenge 2025</h3>
+          <p class="event-theme">"Membangun Inovasi, Merawat Ukhuwah, Menuju Peradaban Berkemajuan"</p>
+          <div class="info-tabs">
+            <div class="info-tab">
+              <input type="checkbox" id="tab-timeline-lomba" class="tab-toggle" checked>
+              <label for="tab-timeline-lomba" class="tab-label"><i class="fas fa-calendar-alt"></i> Linimasa Lomba</label>
+              <div class="tab-content-panel">
+                <ul>
+                  <li><strong>Pendaftaran:</strong> 18 Agt – 9 Sep 2025</li>
+                  <li><strong>Pengumpulan Karya:</strong> 13 - 20 Sep 2025</li>
+                  <li><strong>Pengumuman:</strong> 24 Sep 2025</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="https://ldksyahid.id/InnovationChallenge" target="_blank" class="btn-primary event-cta-btn"><i class="fas fa-lightbulb"></i> Daftar Lomba</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer-modern">
+    </footer>
+
+  <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
   <script src="script.js"></script>
 </body>
 </html>
