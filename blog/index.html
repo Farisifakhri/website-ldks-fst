@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Nashirul ‘Ilm - LDKS FST</title>
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="blog.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
 </head>
 <body>
   <nav class="navbar">
@@ -32,59 +31,56 @@
     <button class="menu-toggle"><i class="fas fa-bars"></i></button>
   </nav>
 
-  <header class="blog-header">
-    <h1>📰 Blog Nashirul ‘Ilm</h1>
-    <p>Menyebarkan dakwah, ilmu, dan inspirasi mahasiswa.</p>
+  <header class="hero blog-page-hero">
+    <div class="hero-content">
+        <h1 class="gradient-text">Nashirul ‘Ilm</h1>
+        <p class="hero-subtitle">Menyebar Dakwah, Menggugah Jiwa, Menebar Inspirasi.</p>
+    </div>
   </header>
 
-  <div class="filter-menu">
-    <button class="filter-btn active" data-filter="all">Semua</button>
-    <button class="filter-btn" data-filter="berita">Berita Kegiatan</button>
-    <button class="filter-btn" data-filter="syiar">Syiar</button>
-    <button class="filter-btn" data-filter="keilmuan">Keilmuan</button>
-    <button class="filter-btn" data-filter="opini">Opini Mahasiswa</button>
+  <div class="filter-menu-container">
+    <div class="filter-menu modern">
+      <button class="filter-btn active" data-filter="all"><i class="fas fa-globe-asia"></i> Semua</button>
+      <button class="filter-btn" data-filter="syiar"><i class="fas fa-bullhorn"></i> Syiar</button>
+      <button class="filter-btn" data-filter="keilmuan"><i class="fas fa-flask"></i> Keilmuan</button>
+      <button class="filter-btn" data-filter="opini"><i class="fas fa-comment-dots"></i> Opini</button>
+    </div>
   </div>
 
-  <main class="blog-list">
-    <article class="blog-card syiar keilmuan">
-      <img src="../assets/blog1.jpg" alt="Keajaiban Sains dalam Al-Qur’an">
-      <div class="blog-content">
-        <h2><a href="artikel1.html">Keajaiban Sains dalam Al-Qur’an</a></h2>
-        <p class="meta"><i class="fas fa-user"></i> Admin • <i class="fas fa-calendar"></i> 18 Agustus 2025</p>
-        <p class="excerpt">Menyingkap fakta-fakta ilmiah modern tentang embriologi, alam semesta, dan geologi yang ternyata telah diisyaratkan dalam Al-Qur’an.</p>
-        <a href="artikel1.html" class="btn-read">Baca Selengkapnya</a>
-      </div>
-    </article>
+  <main class="content">
+    <div class="blog-grid-container">
+        </div>
+  </main>
 
-    <article class="blog-card syiar">
-      <img src="../assets/blog2.jpg" alt="Dakwah di Lingkungan Kampus">
-      <div class="blog-content">
-        <h2><a href="artikel2.html">Dakwah Kampus: Cahaya yang Tak Boleh Padam</a></h2>
-        <p class="meta"><i class="fas fa-user"></i> Admin • <i class="fas fa-calendar"></i> 19 Agustus 2025</p>
-        <p class="excerpt">Mengapa dakwah di kampus itu penting? Mari kita bahas tantangan, cara, dan semangat untuk menjadi penebar kebaikan di lingkungan akademis.</p>
-        <a href="artikel2.html" class="btn-read">Baca Selengkapnya</a>
-      </div>
-    </article>
-
-    <article class="blog-card syiar">
-      <img src="../assets/blog3.jpg" alt="Ilustrasi penjual roti dan masjid">
-      <div class="blog-content">
-        <h2><a href="artikel3.html">Keajaiban Istighfar: Kisah Imam Ahmad & Penjual Roti</a></h2>
-        <p class="meta"><i class="fas fa-user"></i> Admin • <i class="fas fa-calendar"></i> 19 Agustus 2025</p>
-        <p class="excerpt">Sebuah kisah nyata yang mengharukan tentang bagaimana amalan istighfar yang istiqamah bisa mendatangkan hal-hal yang tak terduga.</p>
-        <a href="artikel3.html" class="btn-read">Baca Selengkapnya</a>
-      </div>
-    </article>
-</main>
-
-
-  <footer>
-    <div class="social-icons">
-      <a href="mailto:jadibaikfst@gmail.com" title="Email LDKS FST"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.instagram.com/ldksyahid_fst/" target="_blank" title="Instagram LDKS FST"><i class="fab fa-instagram"></i></a>
+  <footer class="footer-modern">
+    <div class="footer-content">
+       <div class="footer-section">
+          <div class="footer-logo">
+             <img src="../assets/logo.png" alt="Logo LDKS FST">
+             <h3>LDKS FST</h3>
+          </div>
+          <p>Lembaga Dakwah Kampus Syahid Fakultas Sains dan Teknologi UIN Syarif Hidayatullah Jakarta</p>
+       </div>
+       <div class="footer-section">
+          <h4>Tautan Cepat</h4>
+          <ul>
+             <li><a href="../syiar.html">Syiar</a></li>
+             <li><a href="../keilmuan.html">Keilmuan</a></li>
+             <li><a href="../tentang.html">Tentang Kami</a></li>
+          </ul>
+       </div>
+       <div class="footer-section">
+          <h4>Kontak</h4>
+          <div class="contact-info">
+             <p><i class="fas fa-envelope"></i> jadibaikfst@gmail.com</p>
+             <p><i class="fab fa-instagram"></i> @ldksyahid_fst</p>
+          </div>
+       </div>
     </div>
-    <p>© 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
-  </footer>
+    <div class="footer-bottom">
+       <p>&copy; 2025 LDKS FST - Syiar dan Keilmuan | Dibuat dengan ❤️ oleh Tim IT Dakwah</p>
+    </div>
+ </footer>
 
   <script src="../script.js"></script>
   <script src="blog.js"></script>
