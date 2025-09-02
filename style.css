@@ -3472,3 +3472,51 @@ body.dark .blog-card {
     grid-template-columns: 1fr;
   }
 }
+/* ==========================================================
+   DOCUMENTATION PAGE STYLES — Galeri dengan Filter
+   ========================================================== */
+
+.filter-menu-container {
+  background: var(--bg-page);
+  padding: 0 2rem;
+  position: sticky;
+  top: 70px; /* Menyesuaikan dengan tinggi navbar */
+  z-index: 998;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.filter-menu.modern {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filter-menu.modern .filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  border: 1px solid var(--brand-light);
+  background: transparent;
+  color: var(--brand);
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition-normal);
+}
+
+.filter-menu.modern .filter-btn:hover {
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.filter-menu.modern .filter-btn.active {
+  background: var(--brand);
+  color: var(--text-inverse);
+}
