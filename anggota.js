@@ -32,27 +32,26 @@ document.addEventListener('DOMContentLoaded', function() {
         // Media Kreatif
         { name: "Rajif Ramadhan", major: "Sistem Informasi", year: 2023, division: "Media Kreatif", position: "Koordinator Ikhwan", photo: "rajif.jpg", instagram: "ajipp_r", quote: "Dakwah di era digital, kreatifitas tanpa batas." },
         { name: "Unaisah", major: "Biologi", year: 2023, division: "Media Kreatif", position: "Koordinator Akhwat", photo: "unaisah.png", instagram: "una.sh_", quote: "Satu desain, sejuta pesan kebaikan." },
-        { name: "Azka Acuzio Raines Respati", major: "Sistem Informasi", year: 2024, division: "Media Kreatif", position: "Sekretaris Divisi", photo: "azka.jpg", instagram: "azkaacuzio", quote: "Kreativitas adalah anugerah untuk berdakwah." },
-        { name: "Ghein Karimah", major: "Sistem Informasi", year: 2024, division: "Media Kreatif", position: "Bendahara Divisi", photo: "ghein.jpg", instagram: "gheinkarimah", quote: "Desain yang indah adalah dakwah bil hal." },
+        { name: "Azka Acuzio Raines Respati", major: "Sistem Informasi", year: 2024, division: "Media Kreatif", position: "Sekretaris Divisi", photo: "azka.png", instagram: "dwnzzy", quote: "Kreativitas adalah anugerah untuk berdakwah." },
+        { name: "Ghein Karimah", major: "Sistem Informasi", year: 2024, division: "Media Kreatif", position: "Bendahara Divisi", photo: "ghein.png", instagram: "gheinkarim", quote: "Desain yang indah adalah dakwah bil hal." },
         { name: "Aisyah Anfaul Ummah", major: "Matematika", year: 2023, division: "Media Kreatif", position: "Anggota", photo: "aisyah.jpg", instagram: "aisyahau", quote: "Visual yang baik menyentuh hati lebih cepat." },
-        { name: "Raka Indrasetiawan", major: "Teknik Informatika", year: 2023, division: "Media Kreatif", position: "Anggota", photo: "raka.jpg", instagram: "rakaindra", quote: "Kode dan desain untuk syiar Islam." },
+        { name: "Raka Indrasetiawan", major: "Teknik Informatika", year: 2023, division: "Media Kreatif", position: "Anggota", photo: "raka.png", instagram: "rakaindra_26", quote: "Kode dan desain untuk syiar Islam." },
         
 
         // Pengembangan Ekonomi
-        { name: "Rayhan Hilmy Ghotama", major: "Sistem Informasi", year: 2023, division: "Pengembangan Ekonomi", position: "Koordinator Ikhwan", photo: "rayhan.jpg", instagram: "rayhanhg", quote: "Ekonomi kuat, dakwah pun mandiri." },
         { name: "Muthia Hanifah", major: "Biologi", year: 2024, division: "Pengembangan Ekonomi", position: "Koordinator Akhwat", photo: "muthia.jpg", instagram: "muthiah_", quote: "Wirausaha adalah salah satu pintu rezeki." },
-        { name: "Fakhrudin Rofi Putra", major: "Kimia", year: 2023, division: "Pengembangan Ekonomi", position: "Anggota", photo: "fakhrudin.jpg", instagram: "fakhrudinrofi", quote: "Berniaga sambil berdakwah." },
-        { name: "Muhammad Farhan Ridho", major: "Sistem Informasi", year: 2024, division: "Pengembangan Ekonomi", position: "Anggota", photo: "farhan.jpg", instagram: "farhanridho", quote: "Inovasi bisnis untuk kemaslahatan umat." },
+        { name: "Muhammad Farhan Ridho", major: "Sistem Informasi", year: 2024, division: "Pengembangan Ekonomi", position: "Koordinator Ikhwan", photo: "farhan.jpg", instagram: "farhanridho", quote: "Inovasi bisnis untuk kemaslahatan umat." },
+        { name: "Rayhan Hilmy Ghotama", major: "Sistem Informasi", year: 2023, division: "Pengembangan Ekonomi", position: "Anggota", photo: "rayhan.jpg", instagram: "rayhan_hilmy", quote: "Ekonomi kuat, dakwah pun mandiri." },
         { name: "Nabila Suci Haryanti", major: "Biologi", year: 2024, division: "Pengembangan Ekonomi", position: "Sekretaris Divisi", photo: "nabila.jpg", instagram: "nabilasuci", quote: "Mencatat setiap transaksi sebagai bentuk amanah." },
-        { name: "Pahiriah", major: "Biologi", year: 2024, division: "Pengembangan Ekonomi", position: "Bendahara Divisi", photo: "pahiriah.jpg", instagram: "pahiriah", quote: "Keuangan yang sehat, program yang berkah." },
+        { name: "Pahiriah", major: "Biologi", year: 2024, division: "Pengembangan Ekonomi", position: "Bendahara Divisi", photo: "pahiriah.png", instagram: "pahrhh_", quote: "Keuangan yang sehat, program yang berkah." },
         { name: "Siti Maisaroh Shadrina Syaiputri", major: "Agribisnis", year: 2024, division: "Pengembangan Ekonomi", position: "Anggota", photo: "maisaroh.jpg", instagram: "sitimaisaroh", quote: "Agribisnis syariah untuk kesejahteraan bersama." },
 
         // Keputrian
         { name: "Sabrina Izzatun Nisa", major: "Matematika", year: 2023, division: "Keputrian", position: "Koordinator Akhwat", photo: "sabrina.jpg", instagram: "sabrinaizzatun", quote: "Muslimah adalah tiang negara, mari perkokoh bersama." },
-        { name: "Ratu Amaliah", major: "Teknik Informatika", year: 2023, division: "Keputrian", position: "Sekretaris Divisi", photo: "ratu.jpg", instagram: "ratuamaliah", quote: "Membangun ukhuwah di antara para muslimah." },
+        { name: "Ratu Amaliah", major: "Teknik Informatika", year: 2023, division: "Keputrian", position: "Sekretaris Divisi", photo: "ratu.jpg", instagram: "ratuamlh_", quote: "Membangun ukhuwah di antara para muslimah." },
         { name: "Farah Syahrani", major: "Agribisnis", year: 2024, division: "Keputrian", position: "Bendahara Divisi", photo: "farah.jpg", instagram: "farahsyahrani", quote: "Muslimah berdaya, umat berjaya." },
         { name: "Aisyah Fitri Sofianti", major: "Kimia", year: 2023, division: "Keputrian", position: "Anggota", photo: "aisyahfitri.jpg", instagram: "aisyahfitri", quote: "Menjadi sebaik-baik perhiasan dunia." },
-        { name: "Wafdatul 'Urfi", major: "Teknik Informatika", year: 2024, division: "Keputrian", position: "Anggota", photo: "wafda.jpg", instagram: "wafdatulurfi", quote: "Kecerdasan dan keshalihan berjalan beriringan." },
+        { name: "Wafdatul 'Urfi", major: "Teknik Informatika", year: 2024, division: "Keputrian", position: "Anggota", photo: "urfi.png", instagram: "wafdaurfi", quote: "Kecerdasan dan keshalihan berjalan beriringan." },
         
     ];
 
