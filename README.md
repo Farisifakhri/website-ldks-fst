@@ -16,7 +16,6 @@ Repository ini berisi kode sumber untuk website resmi **LDK Syahid Fakultas Sain
 ## 🛠️ Teknologi
 
 * HTML5, CSS3, JavaScript
-* [Sebutkan jika pakai framework atau library lain]
 
 ---
 
