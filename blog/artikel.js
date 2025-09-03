@@ -1,37 +1,56 @@
+// File ini bertugas sebagai "lem perekat" antara data artikel dan data pengurus
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Pastikan data 'articles' dan 'members' tersedia
+  // 1. Cek apakah data dari 'blog.js' dan 'anggota.js' sudah siap
   if (typeof articles === 'undefined' || typeof members === 'undefined') {
+    console.error("GAGAL: Pastikan file anggota.js dan blog.js sudah dipanggil di HTML sebelum file ini.");
     return;
   }
 
-  // Ambil judul dari H1 halaman artikel ini
-  const pageTitle = document.querySelector('.article-header h1').textContent.trim();
+  // 2. Cari tahu artikel mana yang sedang dibuka berdasarkan judul di H1
+  const pageTitleElement = document.querySelector('.article-header h1');
+  if (!pageTitleElement) return; // Keluar jika halaman tidak punya judul
+  const pageTitle = pageTitleElement.textContent.trim();
 
-  // Cari data artikel ini di 'blog.js' berdasarkan judul
+  // 3. Cari data lengkap artikel ini di dalam array 'articles'
   const currentArticle = articles.find(article => article.title === pageTitle);
-  if (!currentArticle) return;
+  if (!currentArticle) return; // Keluar jika artikel ini tidak terdaftar di blog.js
 
-  // Ambil nama penulisnya
+  // 4. Dapatkan "kunci"-nya, yaitu nama penulis
   const authorName = currentArticle.author;
-
-  // Cari profil penulis di 'anggota.js' berdasarkan nama
+  
+  // 5. Gunakan "kunci" untuk mencari profil lengkap penulis di array 'members'
   const authorData = members.find(member => member.name === authorName);
+  
+  const authorBox = document.querySelector('.author-box-container');
+  if (!authorBox) return;
+
+  // 6. Jika profil penulis tidak ditemukan di anggota.js, sembunyikan kotak profil
   if (!authorData) {
-    // Jika penulis tidak ditemukan, sembunyikan kotak profil
-    document.querySelector('.author-box-container').style.display = 'none';
+    authorBox.style.display = 'none';
     return;
   }
 
-  // Jika ditemukan, isi "wadah" HTML dengan data profil
-  document.getElementById('author-photo').src = `../assets/anggota/${authorData.photo}`;
-  document.getElementById('author-photo').alt = `Foto ${authorData.name}`;
-  document.getElementById('author-name').textContent = authorData.name;
-  document.getElementById('author-position').textContent = `${authorData.position}, Divisi ${authorData.division}`;
+  // 7. JIKA DITEMUKAN, saatnya mengisi "wadah" di HTML dengan data yang benar
+  const authorPhotoEl = document.getElementById('author-photo');
+  const authorNameEl = document.getElementById('author-name');
+  const authorPositionEl = document.getElementById('author-position');
+  const authorInstagramEl = document.getElementById('author-instagram');
+  const authorProfileLinkEl = document.getElementById('author-profile-link');
 
-  const instagramLink = document.getElementById('author-instagram');
+  // Mengisi FOTO, NAMA, dan JABATAN
+  authorPhotoEl.src = `../assets/anggota/${authorData.photo}`;
+  authorPhotoEl.alt = `Foto ${authorData.name}`;
+  authorNameEl.textContent = authorData.name;
+  authorPositionEl.textContent = `${authorData.position}, Divisi ${authorData.division}`;
+  
+  // Mengisi link INSTAGRAM (hanya jika ada)
   if (authorData.instagram) {
-    instagramLink.href = `https://instagram.com/${authorData.instagram}`;
-  } else {
-    instagramLink.style.display = 'none';
+    authorInstagramEl.href = `https://instagram.com/${authorData.instagram}`;
+    authorInstagramEl.style.display = 'inline-flex'; // Tampilkan tombol IG
   }
+  
+  // Membuat LINK ke halaman PENGURUS
+  const searchUrl = `../anggota.html?search=${encodeURIComponent(authorData.name)}`;
+  authorProfileLinkEl.href = searchUrl;
 });

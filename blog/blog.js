@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const articles = [
         {
             title: "Keajaiban Sains dalam Al-Qur’an",
-            image: "../assets/blog1.png",
+            image: "../assets/images/blog1.jpeg",
             category: ["syiar", "keilmuan"],
             author: "Muhammad Fakhri Alfarisi",
             date: "2025-08-18", // Gunakan format YYYY-MM-DD untuk pengurutan
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: "Dakwah Kampus: Cahaya yang Tak Boleh Padam",
-            image: "../assets/blog2.jpg",
+            image: "../assets/images/blog2.jpeg",
             category: ["syiar", "opini"],
             author: "Muhammad Syafiq Radyan",
             date: "2025-08-19",
@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         
         {
-            title: "Manajemen Waktu ala Rasulullah untuk Mahasiswa Sibuk",
-            image: "../assets/blog3.jpg",
+            title: "Keajaiban Istighfar: Kisah Imam Ahmad & Penjual Roti",
+            image: "../assets/images/blog3.jpeg",
             category: ["psdm", "keilmuan"], 
-            author: "Rahman Faruq Alqorni",
+            author: "Muhammad Hafidz Rizky Rahmawan",
             date: "2025-08-20",
             excerpt: "Tips praktis mengatur waktu kuliah, organisasi, dan ibadah dengan inspirasi dari pola hidup Rasulullah SAW.",
             link: "artikel3.html"
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         {
             title: "Hasil Diskusi Mind & Ink: Alih Fungsi Hutan & Sawit - LDKS FST",
-            image: "../assets/mind-and-ink1.jpg",
+            image: "../assets/images/diskusi.jpeg",
             category: ["syiar", "opini"], 
             author: "Avrielle Mauliaraudhah Farmudya",
             date: "2025-08-21",

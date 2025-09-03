@@ -4170,3 +4170,30 @@ body.dark .blog-card {
     text-align: center;
   }
 }
+
+/* Style untuk tombol "Lihat Profil" di Author Box */
+.author-socials {
+  display: flex;
+  flex-wrap: wrap; /* Agar rapi di mobile */
+  gap: 1.5rem; /* Jarak antar tombol */
+  margin-top: 1rem;
+}
+
+.author-profile-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e2e8f0;
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.author-profile-btn:hover {
+  background-color: #cbd5e1;
+  color: var(--brand-dark);
+}

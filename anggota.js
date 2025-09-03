@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "Muhammad Amar Primus Firdaus", major: "Matematika", year: 2023, division: "PSDM", position: "Koordinator Ikhwan", photo: "amar.png", instagram: "amarfirdaus09", quote: "Kaderisasi adalah jantung organisasi, mari rawat bersama." },
         { name: "Nesya Ayu Syifa Yanti", major: "Kimia", year: 2023, division: "PSDM", position: "Koordinator Akhwat", photo: "nesya.png", instagram: "sya.nes_", quote: "Setiap langkah kecil dalam pembinaan adalah investasi masa depan." },
         { name: "Rahman Faruq Alqorni", major: "Sistem Informasi", year: 2024, division: "PSDM", position: "Sekretaris Divisi", photo: "faruq.png", instagram: "rahmanfaruq", quote: "Mencatat setiap proses untuk perbaikan berkelanjutan." },
-        { name: "Shaskia Dwi Ramadhani", major: "Biologi", year: 2024, division: "PSDM", position: "Bendahara Divisi", photo: "shaskia.png", instagram: "shaskiadwi", quote: "Mengelola sumber daya untuk keberkahan bersama." },
+        { name: "Shaskia Dwi Ramadhani", major: "Biologi", year: 2024, division: "PSDM", position: "Bendahara Divisi", photo: "shaskia.png", instagram: "shasdrmdh", quote: "Mengelola sumber daya untuk keberkahan bersama." },
         { name: "Adila Naila", major: "Kimia", year: 2024, division: "PSDM", position: "Anggota", photo: "adila.png", instagram: "adilanailaa_", quote: "Semangat dalam pembinaan, ikhlas dalam pengabdian." },
         { name: "Lira Marcella", major: "Biologi", year: 2023, division: "PSDM", position: "Anggota", photo: "lira.png", instagram: "lyrnmrcll.ix", quote: "Belajar bersama, tumbuh bersama, kuat bersama." },
         { name: "Muhammad Hafidz Rizky Rahmawan", major: "Teknik Informatika", year: 2024, division: "PSDM", position: "Anggota", photo: "awan.jpg", instagram: "mhafidzerr", quote: "Membentuk generasi Rabbani yang siap memimpin." },
@@ -58,6 +58,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const gridContainer = document.getElementById('members-grid');
     const searchInput = document.getElementById('searchInput');
     const filterBtns = document.querySelectorAll('.filter-buttons .filter-btn');
+
+    // === TAMBAHKAN BLOK KODE INI ===
+    // Cek apakah ada parameter 'search' di URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('search');
+
+    if (searchQuery) {
+        // Jika ada, isi otomatis kotak pencarian dan lakukan pencarian
+        searchInput.value = searchQuery;
+        filterAndSearch();
+    }
+    // === AKHIR BLOK KODE TAMBAHAN ===
 
     function displayMembers(filteredMembers) {
         gridContainer.innerHTML = '';
@@ -162,6 +174,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     searchInput.addEventListener('input', filterAndSearch);
 
-    // Initial display
-    displayMembers(members);
+   // Panggil displayMembers di akhir untuk menampilkan hasil awal
+    // (termasuk hasil dari link jika ada)
+    displayMembers(members.filter(member => {
+        const searchTerm = searchInput.value.toLowerCase();
+        if (!searchTerm) return true;
+        return member.name.toLowerCase().includes(searchTerm);
+    }));
 });
