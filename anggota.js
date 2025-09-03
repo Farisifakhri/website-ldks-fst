@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Syiar & Keilmuan
         { name: "Muhammad Fakhri Alfarisi", major: "Teknik Informatika", year: 2023, division: "Syiar & Keilmuan", position: "Koordinator Ikhwan", photo: "fakhri.jpg", instagram: "farisi_fakhri26", quote: "Dakwah tak mengenal kata henti, terus belajar dan berkarya." },
-        { name: "Avrielle Mauliaraudhah Farmudya", major: "Biologi", year: 2023, division: "Syiar & Keilmuan", position: "Koordinator Akhwat", photo: "avrielle.png", instagram: "avriellemlee_", quote: "Menyemai ilmu, menuai iman." },
+        { name: "Avrielle Mauliaraudhah Farmudya", major: "Biologi", year: 2023, division: "Syiar & Keilmuan", position: "Koordinator Akhwat", photo: "avrielle.jpg", instagram: "avriellemlee_", quote: "Menyemai ilmu, menuai iman." },
         { name: "Muhammad Fakhri Jihadil Aslam", major: "Agribisnis", year: 2024, division: "Syiar & Keilmuan", position: "Sekretaris Divisi", photo: "jihadil.png", instagram: "fakhrlll", quote: "Tulisan adalah jejak dakwah yang abadi." },
-        { name: "Rifdah Fathimah Az-Zahra", major: "Kimia", year: 2023, division: "Syiar & Keilmuan", position: "Bendahara Divisi", photo: "rifdah.png", instagram: "rifdahfaaz_", quote: "Ilmu dan iman adalah dua sisi mata uang yang tak terpisahkan." },
+        { name: "Rifdah Fathimah Az-Zahra", major: "Kimia", year: 2023, division: "Syiar & Keilmuan", position: "Bendahara Divisi", photo: "rifdah.jpg", instagram: "rifdahfaaz_", quote: "Ilmu dan iman adalah dua sisi mata uang yang tak terpisahkan." },
         { name: "Indana Zulfa", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "indana.jpg", instagram: "indanazulfa", quote: "Berbagi ilmu adalah cara terbaik untuk mengikatnya." },
         { name: "Anisa Dilla", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "anisa.jpg", instagram: "anisadilla", quote: "Setiap kajian adalah oase di tengah padang pasir." },
         { name: "Ayu Syahla Nursafitri Rachman", major: "Kimia", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "ayu.jpg", instagram: "aysnura_", quote: "Sains menguatkan iman, iman menuntun sains." },
