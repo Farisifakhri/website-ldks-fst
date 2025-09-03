@@ -2025,12 +2025,33 @@ a:hover {
 }
 
 /* ============= ENHANCED BLOG PREVIEW ============= */
+/* ============= ENHANCED BLOG PREVIEW (REVISED FOR BALANCE) ============= */
 .blog-preview.modern {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr; /* Diubah menjadi 2 kolom (66% dan 33%) */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Menghapus aturan lama yang tidak relevan lagi */
+.blog-card.featured {
+  grid-row: auto; /* Direset */
+}
+
+/* Style untuk wrapper BARU yang menumpuk artikel kecil */
+.blog-side-stack {
+  display: flex;
+  flex-direction: column; /* Menumpuk secara vertikal */
+  gap: 2rem; /* Jarak antara dua artikel kecil */
+  justify-content: space-between; /* Memastikan kartu mengisi ruang vertikal */
+}
+
+/* Penyesuaian untuk layar kecil (di bawah 900px) */
+@media (max-width: 900px) {
+  .blog-preview.modern {
+    grid-template-columns: 1fr; /* Semua artikel akan menjadi 1 kolom */
+  }
 }
 
 .blog-card {
@@ -3213,12 +3234,31 @@ body.dark .blog-card {
   box-shadow: none;
 }
 
+/* ==========================================================
+   ENHANCED BLOG PAGE STYLES (REVISED GRID)
+   ========================================================== */
+
 .blog-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* Default: 1 kolom di layar mobile, pasti rapi */
+  grid-template-columns: 1fr;
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Tampilan 2 kolom untuk tablet */
+@media (min-width: 768px) {
+  .blog-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tampilan 3 kolom untuk desktop dan layar lebar */
+@media (min-width: 1024px) {
+  .blog-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .blog-card-modern {
@@ -3702,10 +3742,6 @@ body.dark .blog-card {
   margin: 0;
   font-size: 1.1rem;
   color: var(--text-main);
-}
-
-.citation {
-  /* Memberi sedikit penanda pada teks yang disitasi */
 }
 
 .citation-ref {
