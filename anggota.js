@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "Nur Anisa Lisnia Dewi", major: "Matematika", year: 2023, division: "BPH", position: "Ketua Keputrian", photo: "nuranisa.png", instagram: "nalisniadewi_", quote: "Menjadi muslimah cerdas yang menginspirasi sesama." },
         { name: "Ammar Hawari", major: "Matematika", year: 2023, division: "BPH", position: "Sekretaris Jendral", photo: "ammar.png", instagram: "ammrhwri_", quote: "Kebaikan itu menular, mari kita mulai dari diri sendiri." },
         { name: "Izhara Fania Citradewi", major: "Biologi", year: 2023, division: "BPH", position: "Bendahara", photo: "izhara.png", instagram: "thisizhaar_", quote: "Amanah dalam setiap hitungan, berkah dalam setiap langkah." },
-        { name: "Muhammad Rizki Hariyanto", major: "Sistem Informasi", year: 2024, division: "BPH", position: "Wakil Sekretaris", photo: "hariyanto.png", instagram: "mrizkihariyan", quote: "Administrasi rapi, dakwah pun lancar." },
+        { name: "Muhammad Rizki Hariyanto", major: "Sistem Informasi", year: 2024, division: "BPH", position: "Wakil Sekretaris", photo: "hariyanto.jpg", instagram: "mrizkihariyan", quote: "Administrasi rapi, dakwah pun lancar." },
         { name: "Najma Fawza", major: "Matematika", year: 2024, division: "BPH", position: "Wakil Bendahara", photo: "najma.png", instagram: "", quote: "Teliti dalam mengelola, ikhlas dalam melayani." },
 
         // PSDM (Pengembangan Sumber Daya Muslim)
