@@ -11,30 +11,32 @@ document.addEventListener('DOMContentLoaded', function() {
         // PSDM (Pengembangan Sumber Daya Muslim)
         { name: "Muhammad Amar Primus Firdaus", major: "Matematika", year: 2023, division: "PSDM", position: "Koordinator Ikhwan", photo: "amar.png", instagram: "amarfirdaus09", quote: "Kaderisasi adalah jantung organisasi, mari rawat bersama." },
         { name: "Nesya Ayu Syifa Yanti", major: "Kimia", year: 2023, division: "PSDM", position: "Koordinator Akhwat", photo: "nesya.png", instagram: "sya.nes_", quote: "Setiap langkah kecil dalam pembinaan adalah investasi masa depan." },
+        { name: "Rahman Faruq Alqorni", major: "Sistem Informasi", year: 2024, division: "PSDM", position: "Sekretaris Divisi", photo: "faruq.png", instagram: "rahmanfaruq", quote: "Mencatat setiap proses untuk perbaikan berkelanjutan." },
+        { name: "Shaskia Dwi Ramadhani", major: "Biologi", year: 2024, division: "PSDM", position: "Bendahara Divisi", photo: "shaskia.png", instagram: "shaskiadwi", quote: "Mengelola sumber daya untuk keberkahan bersama." },
+        { name: "Adila Naila", major: "Kimia", year: 2024, division: "PSDM", position: "Anggota", photo: "adila.png", instagram: "adilanailaa_", quote: "Semangat dalam pembinaan, ikhlas dalam pengabdian." },
         { name: "Lira Marcella", major: "Biologi", year: 2023, division: "PSDM", position: "Anggota", photo: "lira.png", instagram: "liramarcella", quote: "Belajar bersama, tumbuh bersama, kuat bersama." },
         { name: "Muhammad Hafidz Rizky Rahmawan", major: "Teknik Informatika", year: 2024, division: "PSDM", position: "Anggota", photo: "awan.jpg", instagram: "mhafidzerr", quote: "Membentuk generasi Rabbani yang siap memimpin." },
         { name: "Nayla Taqiyya", major: "Teknik Informatika", year: 2024, division: "PSDM", position: "Anggota", photo: "nayla.png", instagram: "naylataqiyya", quote: "Ukhuwah adalah perekat barisan dakwah." },
-        { name: "Rahman Faruq Alqorni", major: "Sistem Informasi", year: 2024, division: "PSDM", position: "Sekretaris Divisi", photo: "faruq.png", instagram: "rahmanfaruq", quote: "Mencatat setiap proses untuk perbaikan berkelanjutan." },
-        { name: "Adila Naila", major: "Kimia", year: 2024, division: "PSDM", position: "Anggota", photo: "adila.png", instagram: "adilanailaa_", quote: "Semangat dalam pembinaan, ikhlas dalam pengabdian." },
-        { name: "Shaskia Dwi Ramadhani", major: "Biologi", year: 2024, division: "PSDM", position: "Bendahara Divisi", photo: "shaskia.png", instagram: "shaskiadwi", quote: "Mengelola sumber daya untuk keberkahan bersama." },
 
         // Syiar & Keilmuan
         { name: "Muhammad Fakhri Alfarisi", major: "Teknik Informatika", year: 2023, division: "Syiar & Keilmuan", position: "Koordinator Ikhwan", photo: "fakhri.jpg", instagram: "farisi_fakhri26", quote: "Dakwah tak mengenal kata henti, terus belajar dan berkarya." },
-        { name: "Avrielle Mauliaraudhah Farmudya", major: "Biologi", year: 2023, division: "Syiar & Keilmuan", position: "Koordinator Akhwat", photo: "avrielle.jpg", instagram: "avriellemf", quote: "Menyemai ilmu, menuai iman." },
-        { name: "Rifdah Fathimah Az-Zahra", major: "Kimia", year: 2023, division: "Syiar & Keilmuan", position: "Bendahara Divisi", photo: "rifdah.jpg", instagram: "rifdahfth", quote: "Ilmu dan iman adalah dua sisi mata uang yang tak terpisahkan." },
+        { name: "Avrielle Mauliaraudhah Farmudya", major: "Biologi", year: 2023, division: "Syiar & Keilmuan", position: "Koordinator Akhwat", photo: "avrielle.png", instagram: "avriellemlee_", quote: "Menyemai ilmu, menuai iman." },
+        { name: "Muhammad Fakhri Jihadil Aslam", major: "Agribisnis", year: 2024, division: "Syiar & Keilmuan", position: "Sekretaris Divisi", photo: "jihadil.jpg", instagram: "fakhrlll", quote: "Tulisan adalah jejak dakwah yang abadi." },
+        { name: "Rifdah Fathimah Az-Zahra", major: "Kimia", year: 2023, division: "Syiar & Keilmuan", position: "Bendahara Divisi", photo: "rifdah.png", instagram: "rifdahfaaz_", quote: "Ilmu dan iman adalah dua sisi mata uang yang tak terpisahkan." },
         { name: "Indana Zulfa", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "indana.jpg", instagram: "indanazulfa", quote: "Berbagi ilmu adalah cara terbaik untuk mengikatnya." },
         { name: "Anisa Dilla", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "anisa.jpg", instagram: "anisadilla", quote: "Setiap kajian adalah oase di tengah padang pasir." },
-        { name: "Ayu Syahla Nursafitri Rachman", major: "Kimia", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "ayu.jpg", instagram: "ayusyahla", quote: "Sains menguatkan iman, iman menuntun sains." },
+        { name: "Ayu Syahla Nursafitri Rachman", major: "Kimia", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "ayu.jpg", instagram: "aysnura_", quote: "Sains menguatkan iman, iman menuntun sains." },
         { name: "Ismail Ahmad Muzaki", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "ismail.jpg", instagram: "ismailmuzaki", quote: "Menyebarkan cahaya ilmu di tengah kegelapan." },
-        { name: "Muhammad Fakhri Jihadil Aslam", major: "Agribisnis", year: 2024, division: "Syiar & Keilmuan", position: "Sekretaris Divisi", photo: "jihadil.jpg", instagram: "fakhrijihadil", quote: "Tulisan adalah jejak dakwah yang abadi." },
+        
 
         // Media Kreatif
-        { name: "Rajif Ramadhan", major: "Sistem Informasi", year: 2023, division: "Media Kreatif", position: "Koordinator Ikhwan", photo: "rajif.jpg", instagram: "rajiframadhan", quote: "Dakwah di era digital, kreatifitas tanpa batas." },
-        { name: "Unaisah", major: "Biologi", year: 2023, division: "Media Kreatif", position: "Koordinator Akhwat", photo: "unaisah.jpg", instagram: "unaisah_", quote: "Satu desain, sejuta pesan kebaikan." },
-        { name: "Aisyah Anfaul Ummah", major: "Matematika", year: 2023, division: "Media Kreatif", position: "Anggota", photo: "aisyah.jpg", instagram: "aisyahau", quote: "Visual yang baik menyentuh hati lebih cepat." },
-        { name: "Raka Indrasetiawan", major: "Teknik Informatika", year: 2023, division: "Media Kreatif", position: "Anggota", photo: "raka.jpg", instagram: "rakaindra", quote: "Kode dan desain untuk syiar Islam." },
+        { name: "Rajif Ramadhan", major: "Sistem Informasi", year: 2023, division: "Media Kreatif", position: "Koordinator Ikhwan", photo: "rajif.jpg", instagram: "ajipp_r", quote: "Dakwah di era digital, kreatifitas tanpa batas." },
+        { name: "Unaisah", major: "Biologi", year: 2023, division: "Media Kreatif", position: "Koordinator Akhwat", photo: "unaisah.png", instagram: "una.sh_", quote: "Satu desain, sejuta pesan kebaikan." },
         { name: "Azka Acuzio Raines Respati", major: "Sistem Informasi", year: 2024, division: "Media Kreatif", position: "Sekretaris Divisi", photo: "azka.jpg", instagram: "azkaacuzio", quote: "Kreativitas adalah anugerah untuk berdakwah." },
         { name: "Ghein Karimah", major: "Sistem Informasi", year: 2024, division: "Media Kreatif", position: "Bendahara Divisi", photo: "ghein.jpg", instagram: "gheinkarimah", quote: "Desain yang indah adalah dakwah bil hal." },
+        { name: "Aisyah Anfaul Ummah", major: "Matematika", year: 2023, division: "Media Kreatif", position: "Anggota", photo: "aisyah.jpg", instagram: "aisyahau", quote: "Visual yang baik menyentuh hati lebih cepat." },
+        { name: "Raka Indrasetiawan", major: "Teknik Informatika", year: 2023, division: "Media Kreatif", position: "Anggota", photo: "raka.jpg", instagram: "rakaindra", quote: "Kode dan desain untuk syiar Islam." },
+        
 
         // Pengembangan Ekonomi
         { name: "Rayhan Hilmy Ghotama", major: "Sistem Informasi", year: 2023, division: "Pengembangan Ekonomi", position: "Koordinator Ikhwan", photo: "rayhan.jpg", instagram: "rayhanhg", quote: "Ekonomi kuat, dakwah pun mandiri." },
@@ -47,10 +49,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Keputrian
         { name: "Sabrina Izzatun Nisa", major: "Matematika", year: 2023, division: "Keputrian", position: "Koordinator Akhwat", photo: "sabrina.jpg", instagram: "sabrinaizzatun", quote: "Muslimah adalah tiang negara, mari perkokoh bersama." },
-        { name: "Aisyah Fitri Sofianti", major: "Kimia", year: 2023, division: "Keputrian", position: "Anggota", photo: "aisyahfitri.jpg", instagram: "aisyahfitri", quote: "Menjadi sebaik-baik perhiasan dunia." },
         { name: "Ratu Amaliah", major: "Teknik Informatika", year: 2023, division: "Keputrian", position: "Sekretaris Divisi", photo: "ratu.jpg", instagram: "ratuamaliah", quote: "Membangun ukhuwah di antara para muslimah." },
+        { name: "Farah Syahrani", major: "Agribisnis", year: 2024, division: "Keputrian", position: "Bendahara Divisi", photo: "farah.jpg", instagram: "farahsyahrani", quote: "Muslimah berdaya, umat berjaya." },
+        { name: "Aisyah Fitri Sofianti", major: "Kimia", year: 2023, division: "Keputrian", position: "Anggota", photo: "aisyahfitri.jpg", instagram: "aisyahfitri", quote: "Menjadi sebaik-baik perhiasan dunia." },
         { name: "Wafdatul 'Urfi", major: "Teknik Informatika", year: 2024, division: "Keputrian", position: "Anggota", photo: "wafda.jpg", instagram: "wafdatulurfi", quote: "Kecerdasan dan keshalihan berjalan beriringan." },
-        { name: "Farah Syahrani", major: "Agribisnis", year: 2024, division: "Keputrian", position: "Bendahara Divisi", photo: "farah.jpg", instagram: "farahsyahrani", quote: "Muslimah berdaya, umat berjaya." }
+        
     ];
 
     const gridContainer = document.getElementById('members-grid');

@@ -1894,12 +1894,29 @@ a:hover {
 }
 
 /* ============= ENHANCED PROGRAMS GRID ============= */
+/* ============= ENHANCED PROGRAMS GRID (REVISED FOR PRECISION) ============= */
 .programs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  /* Default: 1 kolom untuk mobile */
+  grid-template-columns: 1fr; 
+  gap: 1.5rem; /* Jarak antar kartu sedikit lebih kecil di mobile */
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Tampilan 2 kolom untuk tablet dan laptop kecil */
+@media (min-width: 768px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* Jarak normal untuk layar lebih besar */
+  }
+}
+
+/* Tampilan 4 kolom untuk desktop/layar lebar */
+@media (min-width: 1200px) {
+  .programs-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .program-card {
@@ -3855,4 +3872,129 @@ body.dark .blog-card {
 
 .member-card .member-division {
   margin-top: auto; /* Mendorong posisi ke bagian bawah kartu */
+}
+
+/* ==========================================================
+   REVISED EVENT CARD STYLES (Glassmorphism Look)
+   ========================================================== */
+
+/* Hapus beberapa style lama agar tidak bentrok */
+.event-card.modern, .event-overlay, .event-info, .countdown-container, .btn-event {
+  all: unset; /* Reset style lama */
+  display: block; /* Kembalikan ke display dasar */
+}
+
+/* Container Kartu Utama */
+.event-card-modern {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  aspect-ratio: 9 / 16; /* Menjaga rasio kartu agar tidak terlalu panjang */
+  max-width: 400px; /* Batas lebar maksimum kartu */
+  margin: 0 auto; /* Pusatkan kartu di dalam grid */
+}
+
+.event-card-modern:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: var(--shadow-2xl);
+}
+
+.event-card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.event-card-modern:hover .event-card-bg {
+  transform: scale(1.1);
+}
+
+/* Wrapper Konten Overlay */
+.event-content-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.5) 100%);
+}
+
+/* Badge di Atas */
+.event-top-badge {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--text-inverse);
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-weight: 600;
+  align-self: center; /* Posisi di tengah atas */
+  box-shadow: var(--shadow-md);
+}
+
+/* Kotak Countdown Timer (Efek Kaca) */
+.event-countdown-box {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.5rem;
+  width: 90%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-lg);
+}
+
+.event-countdown-box p {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.event-countdown-box .countdown-timer {
+  display: flex;
+  justify-content: space-around;
+  color: var(--text-inverse);
+}
+
+.event-countdown-box .countdown-item {
+  text-align: center;
+}
+
+.event-countdown-box .countdown-number {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.event-countdown-box .countdown-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* Tombol Info Selengkapnya (Efek Kaca) */
+.event-info-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--brand);
+  color: var(--text-inverse);
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.event-info-button:hover {
+  background: var(--brand-dark);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl);
 }
