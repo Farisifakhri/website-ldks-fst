@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const members = [
         // BPH (Badan Pengurus Harian)
         { name: "Muhammad Syafiq Radyan", major: "Kimia", year: 2023, division: "BPH", position: "Ketua Umum", photo: "syafiq.jpg", instagram: "muhammadsyafiq25_", quote: "Memimpin dengan hati, berdakwah dengan aksi." },
-        { name: "Nur Anisa Lisnia Dewi", major: "Matematika", year: 2023, division: "BPH", position: "Ketua Keputrian", photo: "nuranisa.png", instagram: "nalisniadewi_", quote: "Menjadi muslimah cerdas yang menginspirasi sesama." },
+        { name: "Nur Anisa Lisnia Dewi", major: "Matematika", year: 2023, division: "BPH", position: "Ketua Keputrian", photo: "nuranisa.jpg", instagram: "nalisniadewi_", quote: "Menjadi muslimah cerdas yang menginspirasi sesama." },
         { name: "Ammar Hawari", major: "Matematika", year: 2023, division: "BPH", position: "Sekretaris Jendral", photo: "ammar.jpg", instagram: "ammrhwri_", quote: "Kebaikan itu menular, mari kita mulai dari diri sendiri." },
         { name: "Izhara Fania Citradewi", major: "Biologi", year: 2023, division: "BPH", position: "Bendahara", photo: "izhara.png", instagram: "thisizhaar_", quote: "Amanah dalam setiap hitungan, berkah dalam setiap langkah." },
         { name: "Muhammad Rizki Hariyanto", major: "Sistem Informasi", year: 2024, division: "BPH", position: "Wakil Sekretaris", photo: "hariyanto.jpg", instagram: "mrizkihariyan", quote: "Administrasi rapi, dakwah pun lancar." },
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Media Kreatif
         { name: "Rajif Ramadhan", major: "Sistem Informasi", year: 2023, division: "Media Kreatif", position: "Koordinator Ikhwan", photo: "rajif.jpg", instagram: "ajipp_r", quote: "Dakwah di era digital, kreatifitas tanpa batas." },
-        { name: "Unaisah", major: "Biologi", year: 2023, division: "Media Kreatif", position: "Koordinator Akhwat", photo: "unaisah.png", instagram: "una.sh_", quote: "Satu desain, sejuta pesan kebaikan." },
+        { name: "Unaisah", major: "Biologi", year: 2023, division: "Media Kreatif", position: "Koordinator Akhwat", photo: "unaisah.jpg", instagram: "una.sh_", quote: "Satu desain, sejuta pesan kebaikan." },
         { name: "Azka Acuzio Raines Respati", major: "Sistem Informasi", year: 2024, division: "Media Kreatif", position: "Sekretaris Divisi", photo: "azka.png", instagram: "dwnzzy", quote: "Kreativitas adalah anugerah untuk berdakwah." },
         { name: "Ghein Karimah", major: "Sistem Informasi", year: 2024, division: "Media Kreatif", position: "Bendahara Divisi", photo: "ghein.png", instagram: "gheinkarim", quote: "Desain yang indah adalah dakwah bil hal." },
         { name: "Aisyah Anfaul Ummah", major: "Matematika", year: 2023, division: "Media Kreatif", position: "Anggota", photo: "aisyah.jpg", instagram: "aisyahau", quote: "Visual yang baik menyentuh hati lebih cepat." },
