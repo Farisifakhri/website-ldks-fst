@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "Ammar Hawari", major: "Matematika", year: 2023, division: "BPH", position: "Sekretaris Jendral", photo: "ammar.jpg", instagram: "ammrhwri_", quote: "Kebaikan itu menular, mari kita mulai dari diri sendiri." },
         { name: "Izhara Fania Citradewi", major: "Biologi", year: 2023, division: "BPH", position: "Bendahara", photo: "izhara.jpg", instagram: "thisizhaar_", quote: "Amanah dalam setiap hitungan, berkah dalam setiap langkah." },
         { name: "Muhammad Rizki Hariyanto", major: "Sistem Informasi", year: 2024, division: "BPH", position: "Wakil Sekretaris", photo: "hariyanto.jpg", instagram: "mrizkihariyan", quote: "Administrasi rapi, dakwah pun lancar." },
-        { name: "Najma Fawza", major: "Matematika", year: 2024, division: "BPH", position: "Wakil Bendahara", photo: "najma.png", instagram: "", quote: "Teliti dalam mengelola, ikhlas dalam melayani." },
+        { name: "Najma Fawza", major: "Matematika", year: 2024, division: "BPH", position: "Wakil Bendahara", photo: "najma.png", instagram: "njmaawza", quote: "Teliti dalam mengelola, ikhlas dalam melayani." },
 
         // PSDM (Pengembangan Sumber Daya Muslim)
         { name: "Muhammad Amar Primus Firdaus", major: "Matematika", year: 2023, division: "PSDM", position: "Koordinator Ikhwan", photo: "amar.png", instagram: "amarfirdaus09", quote: "Kaderisasi adalah jantung organisasi, mari rawat bersama." },
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "Avrielle Mauliaraudhah Farmudya", major: "Biologi", year: 2023, division: "Syiar & Keilmuan", position: "Koordinator Akhwat", photo: "avrielle.jpg", instagram: "avriellemlee_", quote: "Menyemai ilmu, menuai iman." },
         { name: "Muhammad Fakhri Jihadil Aslam", major: "Agribisnis", year: 2024, division: "Syiar & Keilmuan", position: "Sekretaris Divisi", photo: "jihadil.png", instagram: "fakhrlll", quote: "Tulisan adalah jejak dakwah yang abadi." },
         { name: "Rifdah Fathimah Az-Zahra", major: "Kimia", year: 2023, division: "Syiar & Keilmuan", position: "Bendahara Divisi", photo: "rifdah.jpg", instagram: "rifdahfaaz_", quote: "Ilmu dan iman adalah dua sisi mata uang yang tak terpisahkan." },
-        { name: "Indana Zulfa", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "indana.jpg", instagram: "indanazulfa", quote: "Berbagi ilmu adalah cara terbaik untuk mengikatnya." },
-        { name: "Anisa Dilla", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "anisa.jpg", instagram: "anisadilla", quote: "Setiap kajian adalah oase di tengah padang pasir." },
+        { name: "Indana Zulfa", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "indana.jpg", instagram: "Afluzzzz", quote: "Berbagi ilmu adalah cara terbaik untuk mengikatnya." },
+        { name: "Anisa Dilla", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "anisa.jpg", instagram: "ddillans", quote: "Setiap kajian adalah oase di tengah padang pasir." },
         { name: "Ayu Syahla Nursafitri Rachman", major: "Kimia", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "ayu.jpg", instagram: "aysnura_", quote: "Sains menguatkan iman, iman menuntun sains." },
         { name: "Ismail Ahmad Muzaki", major: "Biologi", year: 2024, division: "Syiar & Keilmuan", position: "Anggota", photo: "muzaki.jpg", instagram: "Mahmuz._73", quote: "Menyebarkan cahaya ilmu di tengah kegelapan." },
         
