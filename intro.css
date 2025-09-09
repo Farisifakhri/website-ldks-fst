@@ -1,7 +1,3 @@
-/* =================================================================== */
-        /* ENHANCED INTRO.CSS - Ultra Modern Animated Intro for LDKS FST       */
-        /* =================================================================== */
-
         * {
             margin: 0;
             padding: 0;
@@ -408,7 +404,7 @@
             }
         }
 
-        /* 📱 Responsive Design */
+        
         @media (max-width: 768px) {
             .intro-icons {
                 gap: 2rem;
