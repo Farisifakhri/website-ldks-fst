@@ -59,17 +59,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const filterBtns = document.querySelectorAll('.filter-buttons .filter-btn');
 
-    // === TAMBAHKAN BLOK KODE INI ===
-    // Cek apakah ada parameter 'search' di URL
+    
     const urlParams = new URLSearchParams(window.location.search);
     const searchQuery = urlParams.get('search');
 
     if (searchQuery) {
-        // Jika ada, isi otomatis kotak pencarian dan lakukan pencarian
         searchInput.value = searchQuery;
         filterAndSearch();
     }
-    // === AKHIR BLOK KODE TAMBAHAN ===
 
     function displayMembers(filteredMembers) {
         gridContainer.innerHTML = '';
@@ -174,8 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     searchInput.addEventListener('input', filterAndSearch);
 
-   // Panggil displayMembers di akhir untuk menampilkan hasil awal
-    // (termasuk hasil dari link jika ada)
+  
     displayMembers(members.filter(member => {
         const searchTerm = searchInput.value.toLowerCase();
         if (!searchTerm) return true;

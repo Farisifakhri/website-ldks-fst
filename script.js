@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initializeTestimonialSlider();
   initializeProgressBars();
   initializeContactForm();
+  updateEventVisibility(); // <-- TAMBAHKAN BARIS INI
 });
 
 // =================================================================== //
@@ -914,3 +915,56 @@ notificationStyles.textContent = `
   }
 `;
 document.head.appendChild(notificationStyles);
+
+// =================================================================== //
+// 📰 FUNGSI OTOMATISASI INFO KEGIATAN (VERSI TIMELINE)                //
+// =================================================================== //
+function updateEventVisibility() {
+  // 1. Cari elemen baru
+  const agendaTimeline = document.getElementById('agenda-timeline');
+  const noEventsMessage = document.getElementById('no-events-message');
+  
+  if (!agendaTimeline || !noEventsMessage) {
+    return; // Keluar jika tidak di homepage
+  }
+
+  // 2. Cari semua kartu agenda
+  const eventItems = agendaTimeline.querySelectorAll('.event-item');
+  const now = new Date();
+  let visibleEventCount = 0;
+
+  eventItems.forEach(item => {
+    // 3. Ambil tanggal dari data-target-date yang baru kita tambahkan
+    const targetDateStr = item.dataset.targetDate;
+    
+    if (targetDateStr) {
+      const targetDate = new Date(targetDateStr);
+      
+      // 4. Cek apakah tanggal sudah lewat
+      if (targetDate < now) {
+        // Jika sudah lewat, jangan disembunyikan, tapi ubah statusnya
+        const statusDiv = item.querySelector('.event-status');
+        if (statusDiv) {
+          statusDiv.className = 'event-status'; // Hapus kelas 'coming-soon' atau 'available'
+          statusDiv.style.background = '#f1f5f9'; // Ganti jadi abu-abu
+          statusDiv.style.color = '#64748b';
+          statusDiv.innerHTML = '<i class="fas fa-check"></i> <span>Selesai</span>';
+        }
+        // Acara yang selesai tetap dihitung sebagai "visible"
+        visibleEventCount++; 
+        
+      } else {
+        // Jika belum lewat
+        visibleEventCount++;
+      }
+    } else {
+      // Jika ada agenda tanpa tanggal, tampilkan saja
+      visibleEventCount++;
+    }
+  });
+
+  // 5. Tampilkan pesan jika sama sekali tidak ada agenda
+  if (visibleEventCount === 0) {
+    noEventsMessage.style.display = 'block';
+  }
+}
