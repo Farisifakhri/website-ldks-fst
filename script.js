@@ -105,7 +105,7 @@ function initializeNavbar() {
   });
 
   // Smooth scroll for same-page navigation
-  document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+  document.querySelectorAll('.nav-links a[href^="#"]:not([href="#"])').forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
